@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# intermediate archives
+src/extracted_archive1/
+src/extracted_archive2/

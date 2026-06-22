@@ -20,13 +20,13 @@ export default function AnimatedPath({
 
   return (
     <svg
-      viewBox="0 0 1400 920"
+      viewBox="0 0 4095 2487"
       className="absolute inset-0 w-full h-full pointer-events-none"
       style={{ zIndex: 10 }}
     >
       <defs>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="4" result="blur" />
+          <feGaussianBlur stdDeviation="8" result="blur" />
           <feComposite in="SourceGraphic" in2="blur" operator="over" />
         </filter>
         <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -41,7 +41,7 @@ export default function AnimatedPath({
         d={d}
         fill="none"
         stroke="url(#pathGradient)"
-        strokeWidth={6}
+        strokeWidth={14}
         strokeLinecap="round"
         strokeLinejoin="round"
         filter="url(#glow)"
@@ -56,7 +56,7 @@ export default function AnimatedPath({
         d={d}
         fill="none"
         stroke="url(#pathGradient)"
-        strokeWidth={3}
+        strokeWidth={7}
         strokeLinecap="round"
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
@@ -67,7 +67,7 @@ export default function AnimatedPath({
 
       {/* Moving dot at the end of path */}
       <motion.circle
-        r={5}
+        r={12}
         fill="#06b6d4"
         filter="url(#glow)"
         initial={{ offsetDistance: "0%" }}

@@ -179,7 +179,7 @@ export default function SearchBar({ faculty }: SearchBarProps) {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-semibold truncate">
-                    {item.initial}
+                    {item.name} ({item.initial})
                   </p>
                   <p className="text-xs text-slate-500 truncate">
                     Desk {item.deskId} &bull; {item.position || "Faculty"}

@@ -1,198 +1,3340 @@
 [
-  { "deskId": "4M107", "initial": "SBB", "name": "SBB", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M116", "initial": "AJA", "name": "AJA", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M106", "initial": "DFD", "name": "DFD", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M115", "initial": "", "name": "", "position": "", "zone": "4M", "sdsLink": "" },
-  { "deskId": "4M105", "initial": "SHRR", "name": "SHRR", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M114", "initial": "SULT", "name": "SULT", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M104", "initial": "AQU", "name": "AQU", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M113", "initial": "MVH", "name": "MVH", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M103", "initial": "FGZ", "name": "FGZ", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M112", "initial": "TVRR", "name": "TVRR", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M102", "initial": "ASAK", "name": "ASAK", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M111", "initial": "ZLNM", "name": "ZLNM", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M125", "initial": "NZRF", "name": "NZRF", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M134", "initial": "MHDE", "name": "MHDE", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M124", "initial": "SHAH", "name": "SHAH", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M133", "initial": "RFF", "name": "RFF", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M123", "initial": "NLH", "name": "NLH", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M132", "initial": "NDT", "name": "NDT", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M122", "initial": "KKS", "name": "KKS", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M131", "initial": "SVKG", "name": "SVKG", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M121", "initial": "NZU", "name": "NZU", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M130", "initial": "BJS", "name": "BJS", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M120", "initial": "QUZA", "name": "QUZA", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M129", "initial": "ARD", "name": "ARD", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M101", "initial": "PLN", "name": "PLN", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M110", "initial": "MSMA", "name": "MSMA", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M100", "initial": "FFU", "name": "FFU", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M109", "initial": "SWG", "name": "SWG", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M99", "initial": "MTSM", "name": "MTSM", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M108", "initial": "PBK", "name": "PBK", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M119", "initial": "TWK", "name": "TWK", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M128", "initial": "RKBM", "name": "RKBM", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M118", "initial": "AVB", "name": "AVB", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M127", "initial": "RHD", "name": "RHD", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M117", "initial": "FEK", "name": "FEK", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4M126", "initial": "ART", "name": "ART", "position": "Faculty", "zone": "4M", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4N143", "initial": "SDS", "name": "SDS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N152", "initial": "SDQ", "name": "SDQ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N142", "initial": "SDAS", "name": "SDAS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N151", "initial": "TSE", "name": "TSE", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N141", "initial": "UPM", "name": "UPM", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N150", "initial": "AQT", "name": "AQT", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N140", "initial": "PDS", "name": "PDS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N149", "initial": "RAS", "name": "RAS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N139", "initial": "SDU", "name": "SDU", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N148", "initial": "", "name": "", "position": "", "zone": "4N", "sdsLink": "" },
-  { "deskId": "4N138", "initial": "NAFR", "name": "NAFR", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N147", "initial": "", "name": "", "position": "", "zone": "4N", "sdsLink": "" },
-  { "deskId": "4N137", "initial": "AFQ", "name": "AFQ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N146", "initial": "ANWE", "name": "ANWE", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N136", "initial": "LBBH", "name": "LBBH", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N145", "initial": "FARS", "name": "FARS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N135", "initial": "KZMN", "name": "KZMN", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N144", "initial": "HFN", "name": "HFN", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4N161", "initial": "AKJ", "name": "AKJ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N170", "initial": "UTS", "name": "UTS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N160", "initial": "ZAZ", "name": "ZAZ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N169", "initial": "FFR", "name": "FFR", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N159", "initial": "TAV", "name": "TAV", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N168", "initial": "EHQ", "name": "EHQ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N158", "initial": "MOM", "name": "MOM", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N167", "initial": "HMH", "name": "HMH", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N157", "initial": "SDL", "name": "SDL", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N166", "initial": "", "name": "", "position": "", "zone": "4N", "sdsLink": "" },
-  { "deskId": "4N156", "initial": "ZYH", "name": "ZYH", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N165", "initial": "SZZ", "name": "SZZ", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N155", "initial": "FZN", "name": "FZN", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N164", "initial": "RFR", "name": "RFR", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N154", "initial": "RSS", "name": "RSS", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N163", "initial": "NLAM", "name": "NLAM", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N153", "initial": "AYO", "name": "AYO", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4N162", "initial": "MAO", "name": "MAO", "position": "Faculty", "zone": "4N", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4K78", "initial": "IBU", "name": "IBU", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K77", "initial": "", "name": "", "position": "", "zone": "4K", "sdsLink": "" },
-  { "deskId": "4K74", "initial": "TNMF", "name": "TNMF", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K79", "initial": "ATY", "name": "ATY", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K72", "initial": "ANKH", "name": "ANKH", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K76", "initial": "SMYA", "name": "SMYA", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K75", "initial": "TNF", "name": "TNF", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K73", "initial": "LRK", "name": "LRK", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K80", "initial": "UJT", "name": "UJT", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K84", "initial": "FBAW", "name": "FBAW", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K85", "initial": "MAU", "name": "MAU", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K71", "initial": "MAJU", "name": "MAJU", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K81", "initial": "FIC", "name": "FIC", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K83", "initial": "TAP", "name": "TAP", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K86", "initial": "KNI", "name": "KNI", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K70", "initial": "STNM", "name": "STNM", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K82", "initial": "SUE", "name": "SUE", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4K69", "initial": "RFTS", "name": "RFTS", "position": "Faculty", "zone": "4K", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4L89", "initial": "YND", "name": "YND", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L92", "initial": "NAHC", "name": "NAHC", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L95", "initial": "MUNR", "name": "MUNR", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L98", "initial": "LT11", "name": "LT11", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L88", "initial": "ALB", "name": "ALB", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L91", "initial": "SHBK", "name": "SHBK", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L94", "initial": "RKN", "name": "RKN", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L97", "initial": "", "name": "", "position": "", "zone": "4L", "sdsLink": "" },
-  { "deskId": "4L87", "initial": "MZG", "name": "MZG", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L90", "initial": "MNP", "name": "MNP", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L93", "initial": "ADU", "name": "ADU", "position": "Faculty", "zone": "4L", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4L96", "initial": "", "name": "", "position": "", "zone": "4L", "sdsLink": "" },
-
-  { "deskId": "4J60", "initial": "RBR", "name": "RBR", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J59", "initial": "AIB", "name": "AIB", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J55", "initial": "SMUR", "name": "SMUR", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J56", "initial": "RDW", "name": "RDW", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J61", "initial": "ZMD", "name": "ZMD", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J58", "initial": "ANK", "name": "ANK", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J57", "initial": "KKP", "name": "KKP", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J54", "initial": "SBHN", "name": "SBHN", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J53", "initial": "SRU", "name": "SRU", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J62", "initial": "TMD", "name": "TMD", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J66", "initial": "TSM", "name": "TSM", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J67", "initial": "BDH", "name": "BDH", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J52", "initial": "MDF", "name": "MDF", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J63", "initial": "DPU", "name": "DPU", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J65", "initial": "SZD", "name": "SZD", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J68", "initial": "ZHS", "name": "ZHS", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J51", "initial": "SADF", "name": "SADF", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4J64", "initial": "RRH", "name": "RRH", "position": "Faculty", "zone": "4J", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4G01", "initial": "TLQ", "name": "TLQ", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G02", "initial": "MMM", "name": "MMM", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G02", "initial": "IBA", "name": "IBA", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G03", "initial": "TAW", "name": "TAW", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G03", "initial": "ARF", "name": "ARF", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G04", "initial": "MSA", "name": "MSA", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G05", "initial": "DZK", "name": "DZK", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G05", "initial": "TRZ", "name": "TRZ", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G06", "initial": "MNY", "name": "MNY", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G07", "initial": "", "name": "Main Conference/Meeting Room", "position": "Room", "zone": "4G", "sdsLink": "" },
-  { "deskId": "4G08", "initial": "KHR", "name": "KHR", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G09", "initial": "FDC", "name": "FDC", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G10", "initial": "SDF", "name": "SDF", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G11", "initial": "KYK", "name": "KYK", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G12", "initial": "RAK", "name": "RAK", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G12", "initial": "MSI", "name": "MSI", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G13", "initial": "DCO2", "name": "DCO2", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G13", "initial": "DCO3", "name": "DCO3", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G14", "initial": "DCO1", "name": "DCO1", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G15", "initial": "SAS", "name": "SAS", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G16", "initial": "AKTD", "name": "AKTD", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G17", "initial": "MSAH", "name": "MSAH", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G18", "initial": "CMR", "name": "CMR", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G19", "initial": "NBD", "name": "NBD", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G20", "initial": "AAR", "name": "AAR", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G22", "initial": "MIH", "name": "MIH", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G23", "initial": "GRA", "name": "GRA", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G21", "initial": "SRJ", "name": "SRJ", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G21", "initial": "NTR", "name": "NTR", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G24", "initial": "ASA", "name": "ASA", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G25", "initial": "ACH", "name": "ACH", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G26", "initial": "AMK", "name": "AMK", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G27", "initial": "", "name": "Praying Room (M)", "position": "Room", "zone": "4G", "sdsLink": "" },
-  { "deskId": "4G28", "initial": "SWK", "name": "SWK", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G29", "initial": "FYS", "name": "FYS", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G30", "initial": "NNC", "name": "NNC", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G30", "initial": "MAHR", "name": "MAHR", "position": "Faculty", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G31", "initial": "", "name": "Small Conference/Meeting Room", "position": "Room", "zone": "4G", "sdsLink": "" },
-  { "deskId": "4G32", "initial": "SKZ", "name": "SKZ", "position": "CSE Chairperson", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4G33", "initial": "MAM", "name": "MAM", "position": "SDS Dean", "zone": "4G", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-
-  { "deskId": "4P171", "initial": "NMMR", "name": "NMMR", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P172", "initial": "NKMA", "name": "NKMA", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P173", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P174", "initial": "SKIB", "name": "SKIB", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P175", "initial": "RKBR", "name": "RKBR", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P176", "initial": "MAHS", "name": "MAHS", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P177", "initial": "NHBN", "name": "NHBN", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P178", "initial": "RAHA", "name": "RAHA", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P179", "initial": "WHMJ", "name": "WHMJ", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P180", "initial": "MRIA", "name": "MRIA", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P181", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P182", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P183", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P184", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P185", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P186", "initial": "NNTN", "name": "NNTN", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P187", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P188", "initial": "NFMK", "name": "NFMK", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P189", "initial": "", "name": "", "position": "", "zone": "4P", "sdsLink": "" },
-  { "deskId": "4P190", "initial": "NRZR", "name": "NRZR", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P191", "initial": "NRHB", "name": "NRHB", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P192", "initial": "ASRF", "name": "ASRF", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P193", "initial": "NARC", "name": "NARC", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P194", "initial": "NKBS", "name": "NKBS", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P195", "initial": "NAST", "name": "NAST", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P196", "initial": "ITTSC", "name": "ITTSC", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P197", "initial": "SADA", "name": "SADA", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P198", "initial": "SOSB", "name": "SOSB", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" },
-  { "deskId": "4P199", "initial": "UTKR", "name": "UTKR", "position": "Faculty", "zone": "4P", "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list" }
+  {
+    "deskId": "4G20",
+    "initial": "AAR",
+    "name": "Mr. Annajiat Alim Rasel",
+    "position": "Senior Lecturer",
+    "email": "annajiat@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AAR",
+    "boundingBox": {
+      "top": "57.097%",
+      "left": "71.306%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1081681722"
+  },
+  {
+    "deskId": "4G25",
+    "initial": "ACH",
+    "name": "Dr. Amitabha Chakrabarty",
+    "position": "Professor",
+    "email": "amitabha@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ACH",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=820646468"
+  },
+  {
+    "deskId": "4L93",
+    "initial": "ADU",
+    "name": "Mr. Ahmed Mahir Ruhan",
+    "position": "Lecturer",
+    "email": "ahmed.ruhan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ADU",
+    "boundingBox": {
+      "top": "26.538%",
+      "left": "21.245%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1781787818"
+  },
+  {
+    "deskId": "4K79",
+    "initial": "AFA",
+    "name": "Afroza Akhter",
+    "position": "Lecturer",
+    "email": "afroza.akther@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AFA",
+    "boundingBox": {
+      "top": "23.321%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=235279352"
+  },
+  {
+    "deskId": "4N137",
+    "initial": "AFQ",
+    "name": "Mohammed Ashfaqul Haque",
+    "position": "Lecturer",
+    "email": "ashfaqul.haque@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AFQ",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2096409181"
+  },
+  {
+    "deskId": "4J59",
+    "initial": "AIB",
+    "name": "Mr. Md. Abu Ibrahim",
+    "position": "Lecturer",
+    "email": "abu.ibrahim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AIB",
+    "boundingBox": {
+      "top": "44.954%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1061275394"
+  },
+  {
+    "deskId": "4M116",
+    "initial": "AJA",
+    "name": "Mr. Abid Jahan Apon",
+    "position": "Lecturer",
+    "email": "abid.jahan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AJA",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=278544358"
+  },
+  {
+    "deskId": "4N161",
+    "initial": "AKJ",
+    "name": "Akib Anjum",
+    "position": "Lecturer",
+    "email": "anjum.akib@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AKJ",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1186300777"
+  },
+  {
+    "deskId": "4G16",
+    "initial": "AKTD",
+    "name": "Md. Akhtaruzaman Adnan",
+    "position": "Senior Lecturer",
+    "email": "akhtaruzzaman.adnan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AKTD",
+    "boundingBox": {
+      "top": "63.128%",
+      "left": "52.747%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1172379243"
+  },
+  {
+    "deskId": "4L88",
+    "initial": "ALB",
+    "name": "Anindita Labonno",
+    "position": "Lecturer",
+    "email": "anindita.labonno@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ALB",
+    "boundingBox": {
+      "top": "23.522%",
+      "left": "15.629%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=847869276"
+  },
+  {
+    "deskId": "4G26",
+    "initial": "AMK",
+    "name": "Dr. Abu Mohammad Khan",
+    "position": "Associate Professor",
+    "email": "abu.khan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AMK",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=697899700"
+  },
+  {
+    "deskId": "4J58",
+    "initial": "ANK",
+    "name": "Mr. Abdullah Al Nakib",
+    "position": "Lecturer",
+    "email": "abdullah.alnakib@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ANK",
+    "boundingBox": {
+      "top": "50.583%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4K72",
+    "initial": "ANKH",
+    "name": "Anika Ahmed",
+    "position": "Lecturer",
+    "email": "anika.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ANKH",
+    "boundingBox": {
+      "top": "26.136%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1085354418"
+  },
+  {
+    "deskId": "4N146",
+    "initial": "ANWE",
+    "name": "Abdullah Nayem Wasi Emran",
+    "position": "Lecturer",
+    "email": "abdullah.nayem@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ANWE",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=536246056"
+  },
+  {
+    "deskId": "4N150",
+    "initial": "AQT",
+    "name": "Aniqa Tabassum",
+    "position": "Lecturer",
+    "email": "aniqa.tabassum@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AQT",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1972859826"
+  },
+  {
+    "deskId": "4M104",
+    "initial": "AQU",
+    "name": "Mr. Md. Aquib Azmain",
+    "position": "Senior Lecturer",
+    "email": "aquib.azmain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AQU",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1421145586"
+  },
+  {
+    "deskId": "4M129",
+    "initial": "ARD",
+    "name": "Mr. Ayman Rasheed",
+    "position": "Lecturer",
+    "email": "ayman.rasheed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ARD",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1788867931"
+  },
+  {
+    "deskId": "4G03",
+    "initial": "ARF",
+    "name": "Mr. Arif Shakil",
+    "position": "Senior Lecturer",
+    "email": "arif.shakil@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ARF",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "20.024%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1503884352"
+  },
+  {
+    "deskId": "",
+    "initial": "ARPD",
+    "name": "Arpa Roy Dastider",
+    "position": "Lecturer",
+    "email": "arpa.roy@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ARPD",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1108805726"
+  },
+  {
+    "deskId": "4M126",
+    "initial": "ART",
+    "name": "Atanu Roy",
+    "position": "Lecturer",
+    "email": "atanu.roy@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ART",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2053151345"
+  },
+  {
+    "deskId": "4G24",
+    "initial": "ASA",
+    "name": "Dr. Md. Ashraful Alam",
+    "position": "Associate Professor",
+    "email": "ashraful.alam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ASA",
+    "boundingBox": {
+      "top": "5.951%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1055749090"
+  },
+  {
+    "deskId": "4M102",
+    "initial": "ASAK",
+    "name": "Arnob Saha Ankon",
+    "position": "Lecturer",
+    "email": "arnob.ankon@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ASAK",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1299798833"
+  },
+  {
+    "deskId": "4P173",
+    "initial": "ASRF",
+    "name": "Ashraful Islam Shanto Sikder",
+    "position": "Lecturer",
+    "email": "ashraful.islam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ASRF",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "73.016%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2124511279"
+  },
+  {
+    "deskId": "4K77",
+    "initial": "ATY",
+    "name": "Ateya Ahmed Subarna",
+    "position": "Lecturer",
+    "email": "ateya.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ATY",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=766089246"
+  },
+  {
+    "deskId": "4M118",
+    "initial": "AVB",
+    "name": "Mr. Avinandan Banerjee",
+    "position": "Lecturer",
+    "email": "avinandan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AVB",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1344630124"
+  },
+  {
+    "deskId": "4N153",
+    "initial": "AYO",
+    "name": "Ariyan Hossain",
+    "position": "Lecturer",
+    "email": "ariyan.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=AYO",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1628097273"
+  },
+  {
+    "deskId": "4J67",
+    "initial": "BDH",
+    "name": "Mr. Mohammad Badrul Hossain",
+    "position": "Lecturer",
+    "email": "badrul.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=BDH",
+    "boundingBox": {
+      "top": "53.398%",
+      "left": "6.227%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1033959997"
+  },
+  {
+    "deskId": "4M130",
+    "initial": "BIJS",
+    "name": "Bijoy Ahmed Saiem",
+    "position": "Lecturer",
+    "email": "bijoy.saiem@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=BIJS",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1707054182"
+  },
+  {
+    "deskId": "4G18",
+    "initial": "CMR",
+    "name": "Dr. Chowdhury Mofizur Rahman",
+    "position": "Professor",
+    "email": "rahman.mofizur@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=CMR",
+    "boundingBox": {
+      "top": "71.572%",
+      "left": "71.306%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1671138120"
+  },
+  {
+    "deskId": "4M106",
+    "initial": "DFD",
+    "name": "Mr. Dibyo Fabian Dofadar",
+    "position": "Lecturer",
+    "email": "fabian.dofadar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=DFD",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1717791692"
+  },
+  {
+    "deskId": "4J63",
+    "initial": "DPU",
+    "name": "Mr. Shoaib Ahmed Dipu",
+    "position": "Lecturer",
+    "email": "shoaib.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=DPU",
+    "boundingBox": {
+      "top": "53.398%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G05",
+    "initial": "DZK",
+    "name": "Mr. Dewan Ziaul Karim",
+    "position": "Senior Lecturer",
+    "email": "ziaul.karim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=DZK",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "26.618%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=183459727"
+  },
+  {
+    "deskId": "4N168",
+    "initial": "EHQ",
+    "name": "Ehtashamul Haque",
+    "position": "Lecturer",
+    "email": "ehtashamul.haque@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=EHQ",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1094416270"
+  },
+  {
+    "deskId": "4N145",
+    "initial": "FARS",
+    "name": "Ahmad Farhan Shahriar Chowdhury",
+    "position": "Lecturer",
+    "email": "farhan.shahriar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FARS",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=473923989"
+  },
+  {
+    "deskId": "4K84",
+    "initial": "FBAW",
+    "name": "Faria Binta Awal",
+    "position": "Lecturer",
+    "email": "faria.awal@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FBAW",
+    "boundingBox": {
+      "top": "28.951%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=660538798"
+  },
+  {
+    "deskId": "4G09",
+    "initial": "FDC",
+    "name": "Dr. Farida Chowdhury",
+    "position": "Professor",
+    "email": "farida.chowdhury@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FDC",
+    "boundingBox": {
+      "top": "5.951%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=550292385"
+  },
+  {
+    "deskId": "4M117",
+    "initial": "FEK",
+    "name": "Farden Ehsan Khan",
+    "position": "Lecturer",
+    "email": "farden.khan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FEK",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2042945826"
+  },
+  {
+    "deskId": "4N169",
+    "initial": "FFR",
+    "name": "Md. Fatin Ishraq Faruqui",
+    "position": "Lecturer",
+    "email": "md.fatin@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FFR",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=730651948"
+  },
+  {
+    "deskId": "4M100",
+    "initial": "FFU",
+    "name": "Farhan Faruk",
+    "position": "Lecturer",
+    "email": "farhan.faruk@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FFU",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=808965223"
+  },
+  {
+    "deskId": "4M103",
+    "initial": "FGZ",
+    "name": "Mr. Md. Fakhruddin Gazzali",
+    "position": "Lecturer",
+    "email": "fakhruddin.gazzali@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FGZ",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1065380487"
+  },
+  {
+    "deskId": "4K81",
+    "initial": "FIC",
+    "name": "Fatiha Ishrar Chowdhury",
+    "position": "Lecturer",
+    "email": "fatiha.ishrar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FIC",
+    "boundingBox": {
+      "top": "30.559%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1229694463"
+  },
+  {
+    "deskId": "4G29",
+    "initial": "FYS",
+    "name": "Dr. Farig Yousuf Sadeque",
+    "position": "Associate Professor",
+    "email": "farig.sadeque@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FYS",
+    "boundingBox": {
+      "top": "15.521%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1665516837"
+  },
+  {
+    "deskId": "4N155",
+    "initial": "FZN",
+    "name": "Kh.Fardin Zubair Nafis",
+    "position": "Lecturer",
+    "email": "fardin.zubair@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=FZN",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=117363673"
+  },
+  {
+    "deskId": "4G23",
+    "initial": "GRA",
+    "name": "Dr. Md. Golam Rabiul Alam",
+    "position": "Professor",
+    "email": "rabiul.alam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=GRA",
+    "boundingBox": {
+      "top": "11.500%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1856462169"
+  },
+  {
+    "deskId": "4N144",
+    "initial": "HFN",
+    "name": "Sheikh Araf Noshin",
+    "position": "Lecturer",
+    "email": "araf.noshin@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=HFN",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1491425713"
+  },
+  {
+    "deskId": "4N167",
+    "initial": "HMH",
+    "name": "Mir Hamidul Hussain",
+    "position": "Lecturer",
+    "email": "hamidul.hussain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=HMH",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=967617922"
+  },
+  {
+    "deskId": "4G02",
+    "initial": "IBA",
+    "name": "Mr. Md. Imran Bin Azad",
+    "position": "Senior Lecturer",
+    "email": "imran.azad@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=IBA",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "15.873%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2059003129"
+  },
+  {
+    "deskId": "4K78",
+    "initial": "IBU",
+    "name": "Ms. Ipshita Bonhi Upoma",
+    "position": "Lecturer",
+    "email": "ipshita.upoma@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=IBU",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1539054098"
+  },
+  {
+    "deskId": "4P196",
+    "initial": "ITTSC",
+    "name": "Ittehad Saleh Chowdhury",
+    "position": "Lecturer",
+    "email": "ittehad.chowdhury@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ITTSC",
+    "boundingBox": {
+      "top": "62.726%",
+      "left": "61.783%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=174584726"
+  },
+  {
+    "deskId": "4G08",
+    "initial": "KHR",
+    "name": "Dr. Md. Khalilur Rahman",
+    "position": "Professor",
+    "email": "khalilur@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KHR",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1804368157"
+  },
+  {
+    "deskId": "4J57",
+    "initial": "KKP",
+    "name": "Mr. Kabbya Kantam Patwary",
+    "position": "Lecturer",
+    "email": "kabbya.kantam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KKP",
+    "boundingBox": {
+      "top": "50.583%",
+      "left": "6.227%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4M122",
+    "initial": "KKS",
+    "name": "Md. Khaliduzzaman Khan Samrat",
+    "position": "Lecturer",
+    "email": "md.khaliduzzaman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KKS",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1556171594"
+  },
+  {
+    "deskId": "4K86",
+    "initial": "KNI",
+    "name": "Ms. Khondoker Nazia Iqbal",
+    "position": "Lecturer",
+    "email": "nazia.iqbal@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KNI",
+    "boundingBox": {
+      "top": "31.765%",
+      "left": "8.791%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=775777301"
+  },
+  {
+    "deskId": "4G11",
+    "initial": "KYK",
+    "name": "Dr. Mohammad Kaykobad",
+    "position": "Professor",
+    "email": "kaykobad@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KYK",
+    "boundingBox": {
+      "top": "15.521%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=866583531"
+  },
+  {
+    "deskId": "4N135",
+    "initial": "KZMN",
+    "name": "Kazi Kamruzzaman Rabbi",
+    "position": "Lecturer",
+    "email": "kazi.kamruzzaman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=KZMN",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1604494083"
+  },
+  {
+    "deskId": "4N136",
+    "initial": "LBBH",
+    "name": "Labib Hasan Khan",
+    "position": "Lecturer",
+    "email": "labib.hasan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=LBBH",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1388063553"
+  },
+  {
+    "deskId": "4K74",
+    "initial": "LRK",
+    "name": "Lara khanom",
+    "position": "Lecturer",
+    "email": "lara.khanom@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=LRK",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2099219866"
+  },
+  {
+    "deskId": "4G30",
+    "initial": "MAHR",
+    "name": "Mahrin Tasfe",
+    "position": "Senior Lecturer",
+    "email": "mahrin.tasfe@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAHR",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1375722964"
+  },
+  {
+    "deskId": "4P176",
+    "initial": "MAHS",
+    "name": "Md Arif Hasan",
+    "position": "Lecturer",
+    "email": "arif.hasan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAHS",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "78.144%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2032635563"
+  },
+  {
+    "deskId": "4K71",
+    "initial": "MAJIJ",
+    "name": "Majisha Jahan Disha",
+    "position": "Lecturer",
+    "email": "majisha.jahan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAJIJ",
+    "boundingBox": {
+      "top": "28.951%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=12791500"
+  },
+  {
+    "deskId": "4G33",
+    "initial": "MAM",
+    "name": "Dr. Mahbubul Alam Majumdar",
+    "position": "Professor & Dean",
+    "email": "majumdar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAM",
+    "boundingBox": {
+      "top": "57.097%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4N162",
+    "initial": "MAO",
+    "name": "Mirza Abdullah Al Noman",
+    "position": "Lecturer",
+    "email": "mirza.abdullah@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAO",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1568254009"
+  },
+  {
+    "deskId": "4K85",
+    "initial": "MAU",
+    "name": "Marshia Nujhat",
+    "position": "Lecturer",
+    "email": "marshia.nujhat@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MAU",
+    "boundingBox": {
+      "top": "28.951%",
+      "left": "6.227%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=549377428"
+  },
+  {
+    "deskId": "4J52",
+    "initial": "MDF",
+    "name": "Mr. Mohammad Fahim",
+    "position": "Lecturer",
+    "email": "mohammad.fahim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MDF",
+    "boundingBox": {
+      "top": "56.212%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=108181030"
+  },
+  {
+    "deskId": "4M134",
+    "initial": "MHDE",
+    "name": "Mehedi Hasan Emo",
+    "position": "Lecturer",
+    "email": "mehedi.emo@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MHDE",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=915123362"
+  },
+  {
+    "deskId": "4G22",
+    "initial": "MIH",
+    "name": "Dr. Muhammad Iqbal Hossain",
+    "position": "Associate Professor",
+    "email": "iqbal.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MIH",
+    "boundingBox": {
+      "top": "15.521%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=86487693"
+  },
+  {
+    "deskId": "4G02",
+    "initial": "MMM",
+    "name": "Mr. Moin Mostakim",
+    "position": "Senior Lecturer",
+    "email": "mostakim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MMM",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "15.873%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=516708281"
+  },
+  {
+    "deskId": "4L90",
+    "initial": "MNP",
+    "name": "Mushfique Nasir Probor",
+    "position": "Lecturer",
+    "email": "mushfique.nasir@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MNP",
+    "boundingBox": {
+      "top": "26.538%",
+      "left": "18.437%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1408263401"
+  },
+  {
+    "deskId": "4G06",
+    "initial": "MNY",
+    "name": "Dr. Muhammad Nur Yanhaona",
+    "position": "Associate Professor",
+    "email": "nur.yanhaona@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MNY",
+    "boundingBox": {
+      "top": "47.447%",
+      "left": "26.618%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=314496231"
+  },
+  {
+    "deskId": "4N158",
+    "initial": "MOM",
+    "name": "Md. Moynul Asik Moni",
+    "position": "Lecturer",
+    "email": "moynul.moni@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MOM",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=271965293"
+  },
+  {
+    "deskId": "4P180",
+    "initial": "MRIA",
+    "name": "Ummay Maria Muna",
+    "position": "Lecturer",
+    "email": "maria.muna@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MRIA",
+    "boundingBox": {
+      "top": "55.086%",
+      "left": "75.702%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1994482765"
+  },
+  {
+    "deskId": "4G04",
+    "initial": "MSA",
+    "name": "Dr. Matin Saad Abdullah",
+    "position": "Professor",
+    "email": "mabdullah@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MSA",
+    "boundingBox": {
+      "top": "47.447%",
+      "left": "20.024%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=446517116"
+  },
+  {
+    "deskId": "4G17",
+    "initial": "MSAH",
+    "name": "Dr. Md. Sakir Hossain",
+    "position": "Associate Professor",
+    "email": "sakir.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MSAH",
+    "boundingBox": {
+      "top": "69.160%",
+      "left": "52.747%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1041580232"
+  },
+  {
+    "deskId": "4G12",
+    "initial": "MSI",
+    "name": "Mr. Md. Saiful Islam",
+    "position": "Senior Lecturer",
+    "email": "md.saiful.islam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MSI",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4M110",
+    "initial": "MSMA",
+    "name": "Mr. Md. Shamim Mia",
+    "position": "Lecturer",
+    "email": "shamim.mia@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MSMA",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1241109379"
+  },
+  {
+    "deskId": "4M99",
+    "initial": "MTSM",
+    "name": "MD. MUHTASIM MAHMUD",
+    "position": "Lecturer",
+    "email": "muhtasim.mahmud@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MTSM",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=124842100"
+  },
+  {
+    "deskId": "4L95",
+    "initial": "MUNR",
+    "name": "A B M Muntasir Rahman",
+    "position": "Lecturer",
+    "email": "abm.muntasir@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MUNR",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "21.245%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1295059966"
+  },
+  {
+    "deskId": "4M113",
+    "initial": "MVH",
+    "name": "Mohammad Naveed Hossain",
+    "position": "Lecturer",
+    "email": "mohammad.naveed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MVH",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1727828495"
+  },
+  {
+    "deskId": "4L87",
+    "initial": "MZG",
+    "name": "Ahmed Mayeesha Reza Agomoni",
+    "position": "Lecturer",
+    "email": "ahmed.mayeesha@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=MZG",
+    "boundingBox": {
+      "top": "26.538%",
+      "left": "15.629%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=252256629"
+  },
+  {
+    "deskId": "4N138",
+    "initial": "NAFR",
+    "name": "Md Nafiu Rahman",
+    "position": "Lecturer",
+    "email": "nafiu.rahman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NAFR",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=502957148"
+  },
+  {
+    "deskId": "4L92",
+    "initial": "NAHC",
+    "name": "Asif Hasan Chowdhury",
+    "position": "Lecturer",
+    "email": "asif.hasan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NAHC",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "18.437%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1055689047"
+  },
+  {
+    "deskId": "4P192",
+    "initial": "NARC",
+    "name": "Atonu Roy Chowdhury",
+    "position": "Lecturer",
+    "email": "atonuroy.chowdhury@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NARC",
+    "boundingBox": {
+      "top": "43.828%",
+      "left": "68.132%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1524374747"
+  },
+  {
+    "deskId": "4P195",
+    "initial": "NAST",
+    "name": "Nazmus Sakib Touhid",
+    "position": "Lecturer",
+    "email": "nazmus.touhid@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NAST",
+    "boundingBox": {
+      "top": "59.509%",
+      "left": "61.783%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1087930592"
+  },
+  {
+    "deskId": "4G19",
+    "initial": "NBD",
+    "name": "Dr. Badhan Das",
+    "position": "Assistant Professor",
+    "email": "badhan.das@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NBD",
+    "boundingBox": {
+      "top": "64.737%",
+      "left": "71.306%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1234091747"
+  },
+  {
+    "deskId": "4M132",
+    "initial": "NDT",
+    "name": "NIRJHOR DATTA",
+    "position": "Lecturer",
+    "email": "nirjhor.datta@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NDT",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1616492823"
+  },
+  {
+    "deskId": "4P189",
+    "initial": "NFMK",
+    "name": "Md. Saif Mokarrom",
+    "position": "Lecturer",
+    "email": "saif.mokarrom@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NFMK",
+    "boundingBox": {
+      "top": "49.457%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1788509039"
+  },
+  {
+    "deskId": "",
+    "initial": "NFS",
+    "name": "Nafis Faisal",
+    "position": "Lecturer",
+    "email": "nafis.faisal@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NFS",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1493952342"
+  },
+  {
+    "deskId": "4P177",
+    "initial": "NHBN",
+    "name": "Hamim Ibne Nasim",
+    "position": "Lecturer",
+    "email": "hamim.nasim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NHBN",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "78.144%",
+      "width": "0.000%",
+      "height": "0.000%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1388105059"
+  },
+  {
+    "deskId": "4P184",
+    "initial": "NKBS",
+    "name": "Kefaya Benta Shahnoor",
+    "position": "Lecturer",
+    "email": "kefaya.shahnoor@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NKBS",
+    "boundingBox": {
+      "top": "49.457%",
+      "left": "70.574%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1919489380"
+  },
+  {
+    "deskId": "4P172",
+    "initial": "NKMA",
+    "name": "K. M. Azwad Hossain",
+    "position": "Lecturer",
+    "email": "azwad.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NKMA",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "70.574%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=553107521"
+  },
+  {
+    "deskId": "4N163",
+    "initial": "NLAM",
+    "name": "Namirul Islam",
+    "position": "Lecturer",
+    "email": "namirul.islam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NLAM",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=686871011"
+  },
+  {
+    "deskId": "4M123",
+    "initial": "NLH",
+    "name": "Niloy Farhan",
+    "position": "Lecturer",
+    "email": "niloy.farhan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NLH",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=495831142"
+  },
+  {
+    "deskId": "4P171",
+    "initial": "NMMR",
+    "name": "MD MIZANUR RAHMAN MUSTAKIM",
+    "position": "Lecturer",
+    "email": "mizanur.mustakim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NMMR",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "68.132%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1472956914"
+  },
+  {
+    "deskId": "4G30",
+    "initial": "NNC",
+    "name": "Ms. Najeefa Nikhat Choudhury",
+    "position": "Senior Lecturer",
+    "email": "najeefa.chy@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NNC",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P185",
+    "initial": "NNTN",
+    "name": "Naima Tahsin Nodi",
+    "position": "Lecturer",
+    "email": "naima.tahsin@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NNTN",
+    "boundingBox": {
+      "top": "52.272%",
+      "left": "73.016%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1839343029"
+  },
+  {
+    "deskId": "4P191",
+    "initial": "NRHB",
+    "name": "Ruhan Habib",
+    "position": "Lecturer",
+    "email": "ruhan.habib@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NRHB",
+    "boundingBox": {
+      "top": "46.643%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1449788209"
+  },
+  {
+    "deskId": "4P190",
+    "initial": "NRZR",
+    "name": "Riazul Islam Rifat",
+    "position": "Lecturer",
+    "email": "riazul.islam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NRZR",
+    "boundingBox": {
+      "top": "49.457%",
+      "left": "68.132%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1611006069"
+  },
+  {
+    "deskId": "4G21",
+    "initial": "NTR",
+    "name": "Ms. Narzu Tarannum",
+    "position": "Lecturer",
+    "email": "narzu.tarannum@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NTR",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1320242735"
+  },
+  {
+    "deskId": "",
+    "initial": "NUR",
+    "name": "Nur Mohammad Shaon",
+    "position": "Lecturer",
+    "email": "nur.shaon@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NUR",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1164703499"
+  },
+  {
+    "deskId": "4M125",
+    "initial": "NZRF",
+    "name": "Niaz Ashraf Khan",
+    "position": "Senior Lecturer",
+    "email": "niaz.ashraf@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NZRF",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=777896797"
+  },
+  {
+    "deskId": "4M121",
+    "initial": "NZU",
+    "name": "Nazmul Islam",
+    "position": "Lecturer",
+    "email": "nazmul.islam1@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=NZU",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1312027176"
+  },
+  {
+    "deskId": "4M108",
+    "initial": "PBK",
+    "name": "Mr. Partha Bhoumik",
+    "position": "Lecturer",
+    "email": "partha.bhoumik@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=PBK",
+    "boundingBox": {
+      "top": "28.870%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=207057038"
+  },
+  {
+    "deskId": "4N140",
+    "initial": "PDS",
+    "name": "Mr. Purbayan Das",
+    "position": "Lecturer",
+    "email": "purbayan.das@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=PDS",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1417118670"
+  },
+  {
+    "deskId": "4M101",
+    "initial": "PLN",
+    "name": "Pollock Nag",
+    "position": "Lecturer",
+    "email": "pollock.nag@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=PLN",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2075012379"
+  },
+  {
+    "deskId": "",
+    "initial": "PSMD",
+    "name": "Prothito Shovon Majumder",
+    "position": "Lecturer",
+    "email": "prothito.shovon@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=PSMD",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4M120",
+    "initial": "QUZA",
+    "name": "Quazi Ashikur Rahman",
+    "position": "Lecturer",
+    "email": "quazi.ashikur@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=QUZA",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1850049355"
+  },
+  {
+    "deskId": "4P178",
+    "initial": "RAHA",
+    "name": "Farzana Reefat Raha",
+    "position": "Lecturer",
+    "email": "reefat.raha@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RAHA",
+    "boundingBox": {
+      "top": "46.643%",
+      "left": "78.144%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=388008016"
+  },
+  {
+    "deskId": "4G12",
+    "initial": "RAK",
+    "name": "Mr. Rubayat Ahmed Khan",
+    "position": "Senior Lecturer",
+    "email": "rubayat.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RAK",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1198960629"
+  },
+  {
+    "deskId": "4N149",
+    "initial": "RAS",
+    "name": "Md. Rasel Mia",
+    "position": "Lecturer",
+    "email": "rasel.mia@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RAS",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=463817908"
+  },
+  {
+    "deskId": "4J60",
+    "initial": "RBR",
+    "name": "Mr. Rakin Bin Rabbani",
+    "position": "Lecturer",
+    "email": "rakin.rabbani@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RBR",
+    "boundingBox": {
+      "top": "42.139%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=103263396"
+  },
+  {
+    "deskId": "4J56",
+    "initial": "RDW",
+    "name": "Redowanul Akbar",
+    "position": "Lecturer",
+    "email": "redowanul.akbar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RDW",
+    "boundingBox": {
+      "top": "44.954%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=736384285"
+  },
+  {
+    "deskId": "4M133",
+    "initial": "RFF",
+    "name": "Rafid Ahnaf",
+    "position": "Lecturer",
+    "email": "rafid.ahnaf@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RFF",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1697988428"
+  },
+  {
+    "deskId": "4N164",
+    "initial": "RFR",
+    "name": "Md. Rifat Rahman",
+    "position": "Lecturer",
+    "email": "rifat.rahman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RFR",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=379175607"
+  },
+  {
+    "deskId": "4K69",
+    "initial": "RFTS",
+    "name": "Rifa Tasfiya",
+    "position": "Lecturer",
+    "email": "rifa.tasfiya@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RFTS",
+    "boundingBox": {
+      "top": "34.580%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=252614514"
+  },
+  {
+    "deskId": "4M127",
+    "initial": "RHD",
+    "name": "Imran Zahid",
+    "position": "Lecturer",
+    "email": "imran.zahid@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RHD",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4M128",
+    "initial": "RKBM",
+    "name": "Mohammad Rakibul Hasan Mahin",
+    "position": "Lecturer",
+    "email": "mohammad.rakibul@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RKBM",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1653441112"
+  },
+  {
+    "deskId": "4P175",
+    "initial": "RKBR",
+    "name": "Rakib Kibria",
+    "position": "Lecturer",
+    "email": "rakib.kibria@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RKBR",
+    "boundingBox": {
+      "top": "46.643%",
+      "left": "73.016%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1846588376"
+  },
+  {
+    "deskId": "4L94",
+    "initial": "RKN",
+    "name": "Raisul Kabir News",
+    "position": "Lecturer",
+    "email": "raisul.kabir@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RKN",
+    "boundingBox": {
+      "top": "23.522%",
+      "left": "21.245%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1318564146"
+  },
+  {
+    "deskId": "4J64",
+    "initial": "RRH",
+    "name": "Mr. Rafeed Rahman",
+    "position": "Senior Lecturer",
+    "email": "rahman.rafeed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RRH",
+    "boundingBox": {
+      "top": "56.212%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1825989691"
+  },
+  {
+    "deskId": "4N154",
+    "initial": "RSS",
+    "name": "Rafiad Sadat Shahir",
+    "position": "Lecturer",
+    "email": "rafiad.shahir@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=RSS",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=86617051"
+  },
+  {
+    "deskId": "4P197",
+    "initial": "SADA",
+    "name": "Sadif Ahmed",
+    "position": "Lecturer",
+    "email": "sadif.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SADA",
+    "boundingBox": {
+      "top": "65.943%",
+      "left": "61.783%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=276863111"
+  },
+  {
+    "deskId": "4J51",
+    "initial": "SADF",
+    "name": "Saadat Rafid Ahmed",
+    "position": "Lecturer",
+    "email": "saadat.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SADF",
+    "boundingBox": {
+      "top": "61.842%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=936860263"
+  },
+  {
+    "deskId": "4M107",
+    "initial": "SBB",
+    "name": "Md. Sabbir Ahmed",
+    "position": "Senior Lecturer",
+    "email": "sabbir.ahmed@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SBB",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1143572196"
+  },
+  {
+    "deskId": "4J54",
+    "initial": "SBHN",
+    "name": "Mr. Md Sabbir Hossain",
+    "position": "Lecturer",
+    "email": "sabbir.hossain@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SBHN",
+    "boundingBox": {
+      "top": "47.768%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=296569712"
+  },
+  {
+    "deskId": "4N142",
+    "initial": "SDAS",
+    "name": "Sowmitra Das",
+    "position": "Senior Lecturer",
+    "email": "sowmitra.das@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDAS",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=819637523"
+  },
+  {
+    "deskId": "4G10",
+    "initial": "SDF",
+    "name": "Dr. Md Sadek Ferdous",
+    "position": "Professor",
+    "email": "sadek.ferdous@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDF",
+    "boundingBox": {
+      "top": "11.500%",
+      "left": "68.132%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2029786068"
+  },
+  {
+    "deskId": "4N157",
+    "initial": "SDL",
+    "name": "Shadmin Sultana",
+    "position": "Lecturer",
+    "email": "shadmin.sultana@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDL",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1579820747"
+  },
+  {
+    "deskId": "4N152",
+    "initial": "SDQ",
+    "name": "Mr. Md. Saiful Bari Siddiqui",
+    "position": "Senior Lecturer",
+    "email": "saiful.bari@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDQ",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=934699677"
+  },
+  {
+    "deskId": "4N143",
+    "initial": "SDS",
+    "name": "Mr. Shadman Shahriar",
+    "position": "Lecturer",
+    "email": "shadman.shahriar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDS",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1341035102"
+  },
+  {
+    "deskId": "4N148",
+    "initial": "SDU",
+    "name": "Shomen Kundu",
+    "position": "Lecturer",
+    "email": "shomen.kundu@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SDU",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=787982076"
+  },
+  {
+    "deskId": "4M124",
+    "initial": "SHAH",
+    "name": "Asif Shahriar",
+    "position": "Lecturer",
+    "email": "asif.shahriar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SHAH",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=955769832"
+  },
+  {
+    "deskId": "4L91",
+    "initial": "SHBK",
+    "name": "Sahib Kowsar",
+    "position": "Lecturer",
+    "email": "sahib.kowsar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SHBK",
+    "boundingBox": {
+      "top": "23.522%",
+      "left": "18.437%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=812772179"
+  },
+  {
+    "deskId": "4M105",
+    "initial": "SHRR",
+    "name": "Mr. Shahriar Rahman Rana",
+    "position": "Lecturer",
+    "email": "shahriar.rahman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SHRR",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "31.502%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1909074086"
+  },
+  {
+    "deskId": "4P174",
+    "initial": "SKIB",
+    "name": "Nazmus Sakib Ahmed",
+    "position": "Lecturer",
+    "email": "nazmus.sakib@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SKIB",
+    "boundingBox": {
+      "top": "46.643%",
+      "left": "70.574%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=256627832"
+  },
+  {
+    "deskId": "4G32",
+    "initial": "SKZ",
+    "name": "Dr. Sadia Hamid Kazi",
+    "position": "Associate Professor & Chairperson",
+    "email": "skazi@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SKZ",
+    "boundingBox": {
+      "top": "66.345%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1796851428"
+  },
+  {
+    "deskId": "4J55",
+    "initial": "SMUR",
+    "name": "Samiur Rahman",
+    "position": "Lecturer",
+    "email": "rahman.samiur@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SMUR",
+    "boundingBox": {
+      "top": "42.139%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=876692159"
+  },
+  {
+    "deskId": "4K76",
+    "initial": "SMYA",
+    "name": "Sumaiya",
+    "position": "Lecturer",
+    "email": "sumaiya@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SMYA",
+    "boundingBox": {
+      "top": "23.321%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=8000212"
+  },
+  {
+    "deskId": "4P198",
+    "initial": "SOSB",
+    "name": "Soumya Swagata Biswas",
+    "position": "Lecturer",
+    "email": "soumya.swagata@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SOSB",
+    "boundingBox": {
+      "top": "69.160%",
+      "left": "61.783%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=49933590"
+  },
+  {
+    "deskId": "4G21",
+    "initial": "SRJ",
+    "name": "Ms. Mehnaz Seraj",
+    "position": "Senior Lecturer",
+    "email": "seraj.mehnaz@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SRJ",
+    "boundingBox": {
+      "top": "20.909%",
+      "left": "72.772%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1357888304"
+  },
+  {
+    "deskId": "4J53",
+    "initial": "SRU",
+    "name": "Mr. Shakir Rouf",
+    "position": "Lecturer",
+    "email": "shakir.rouf@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SRU",
+    "boundingBox": {
+      "top": "50.583%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2076158493"
+  },
+  {
+    "deskId": "4K70",
+    "initial": "STNM",
+    "name": "Sanjida Tasnim",
+    "position": "Lecturer",
+    "email": "sanjida.tasnim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=STNM",
+    "boundingBox": {
+      "top": "31.765%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1508892965"
+  },
+  {
+    "deskId": "4K82",
+    "initial": "SUE",
+    "name": "Sukarna Sarker",
+    "position": "Lecturer",
+    "email": "sukarna.sarkar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SUE",
+    "boundingBox": {
+      "top": "33.374%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=220322362"
+  },
+  {
+    "deskId": "4M114",
+    "initial": "SULT",
+    "name": "Md. Sultanul Arifin",
+    "position": "Lecturer",
+    "email": "sultanul.arifin@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SULT",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=576917408"
+  },
+  {
+    "deskId": "4M131",
+    "initial": "SVKG",
+    "name": "Souvik Ghosh",
+    "position": "Lecturer",
+    "email": "souvik.ghosh@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SVKG",
+    "boundingBox": {
+      "top": "12.465%",
+      "left": "44.078%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1285164146"
+  },
+  {
+    "deskId": "4M109",
+    "initial": "SWG",
+    "name": "Mr. Swattic Ghose",
+    "position": "Lecturer",
+    "email": "swattic.ghose@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SWG",
+    "boundingBox": {
+      "top": "25.895%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=889380209"
+  },
+  {
+    "deskId": "4G28",
+    "initial": "SWK",
+    "name": "Dr. Swakkhar Shatabda",
+    "position": "Professor",
+    "email": "swakkhar.shatabda@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SWK",
+    "boundingBox": {
+      "top": "11.500%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1783725652"
+  },
+  {
+    "deskId": "",
+    "initial": "SWV",
+    "name": "Showvik Biswas",
+    "position": "Lecturer",
+    "email": "showvik.biswas@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SWV",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4J65",
+    "initial": "SZD",
+    "name": "Md. Shazid Bin Mahbub",
+    "position": "Lecturer",
+    "email": "shazid.mahbub@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SZD",
+    "boundingBox": {
+      "top": "56.212%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1081800822"
+  },
+  {
+    "deskId": "4N165",
+    "initial": "SZZ",
+    "name": "Sazzadul Islam",
+    "position": "Lecturer",
+    "email": "sazzadul.islam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SZZ",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=169531528"
+  },
+  {
+    "deskId": "4K83",
+    "initial": "TAP",
+    "name": "Ms. Tasnim Ahsan Prome",
+    "position": "Lecturer",
+    "email": "tasnim.ahsan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TAP",
+    "boundingBox": {
+      "top": "31.765%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=994283385"
+  },
+  {
+    "deskId": "4N159",
+    "initial": "TAV",
+    "name": "Tarvir Anjum Aditto",
+    "position": "Lecturer",
+    "email": "tarvir.anjum@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TAV",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=973623963"
+  },
+  {
+    "deskId": "4G03",
+    "initial": "TAW",
+    "name": "Mr. Md. Tawhid Anwar",
+    "position": "Senior Lecturer",
+    "email": "tawhid.anwar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TAW",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "20.024%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=605232797"
+  },
+  {
+    "deskId": "",
+    "initial": "THL",
+    "name": "Mohammad Tahsin Alam",
+    "position": "Lecturer",
+    "email": "tahsin.alam@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=THL",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G01",
+    "initial": "TLQ",
+    "name": "Dr. Taiabul Haque",
+    "position": "Professor",
+    "email": "taiabul.haque@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TLQ",
+    "boundingBox": {
+      "top": "47.447%",
+      "left": "15.873%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1240213658"
+  },
+  {
+    "deskId": "4J62",
+    "initial": "TMD",
+    "name": "Mr. Tamkin Mahmud Tan",
+    "position": "Lecturer",
+    "email": "tamkin.mahmud@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TMD",
+    "boundingBox": {
+      "top": "50.583%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=2082717969"
+  },
+  {
+    "deskId": "4K75",
+    "initial": "TNF",
+    "name": "Tanhiat Fatema Afnan",
+    "position": "Lecturer",
+    "email": "tanhiat.fatema@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TNF",
+    "boundingBox": {
+      "top": "26.136%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1325418227"
+  },
+  {
+    "deskId": "4K73",
+    "initial": "TNMF",
+    "name": "Ms. Tasnim Ferdous",
+    "position": "Senior Lecturer",
+    "email": "tasnim.ferdous@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TNMF",
+    "boundingBox": {
+      "top": "23.321%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=748901741"
+  },
+  {
+    "deskId": "4G05",
+    "initial": "TRZ",
+    "name": "Mr. Md. Tanzim Reza",
+    "position": "Senior Lecturer",
+    "email": "tanzim.reza@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TRZ",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "26.618%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=594871026"
+  },
+  {
+    "deskId": "4N151",
+    "initial": "TSE",
+    "name": "Tasneem Mazhar",
+    "position": "Lecturer",
+    "email": "tasneem.mazhar@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TSE",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1624662399"
+  },
+  {
+    "deskId": "4J66",
+    "initial": "TSM",
+    "name": "Mr. Mirza Md. Tanjim Shorif Mugdho",
+    "position": "Lecturer",
+    "email": "mirza.mugdho@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TSM",
+    "boundingBox": {
+      "top": "53.398%",
+      "left": "3.663%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=248629342"
+  },
+  {
+    "deskId": "4M112",
+    "initial": "TVRR",
+    "name": "Tanveer Rahman",
+    "position": "Lecturer",
+    "email": "tanveer.rahman@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TVRR",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=941094423"
+  },
+  {
+    "deskId": "4M119",
+    "initial": "TWK",
+    "name": "Towshik Anam Taj",
+    "position": "Lecturer",
+    "email": "towshik.taj@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=TWK",
+    "boundingBox": {
+      "top": "22.919%",
+      "left": "40.537%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=573320796"
+  },
+  {
+    "deskId": "4K80",
+    "initial": "UJT",
+    "name": "Umme Jannat Taposhi",
+    "position": "Lecturer",
+    "email": "jannat.taposhi@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=UJT",
+    "boundingBox": {
+      "top": "26.136%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=709156686"
+  },
+  {
+    "deskId": "4N141",
+    "initial": "UPM",
+    "name": "Tasnim Sobhan Upoma",
+    "position": "Lecturer",
+    "email": "tasnim.upoma@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=UPM",
+    "boundingBox": {
+      "top": "7.881%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=484400302"
+  },
+  {
+    "deskId": "4P199",
+    "initial": "UTKR",
+    "name": "Utsha Kumar Roy",
+    "position": "Lecturer",
+    "email": "utsha.roy@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=UTKR",
+    "boundingBox": {
+      "top": "72.376%",
+      "left": "61.783%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=956449063"
+  },
+  {
+    "deskId": "4N170",
+    "initial": "UTS",
+    "name": "Utsab Saha",
+    "position": "Lecturer",
+    "email": "utsab.saha@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=UTS",
+    "boundingBox": {
+      "top": "1.930%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P179",
+    "initial": "WHMJ",
+    "name": "Wahida Mahjabin",
+    "position": "Lecturer",
+    "email": "wahida.mahjabin@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=WHMJ",
+    "boundingBox": {
+      "top": "49.457%",
+      "left": "78.144%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=42923731"
+  },
+  {
+    "deskId": "4L89",
+    "initial": "YND",
+    "name": "Yasmin Nadia",
+    "position": "Lecturer",
+    "email": "yasmin.nadia@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=YND",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "15.629%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=55103178"
+  },
+  {
+    "deskId": "4N160",
+    "initial": "ZAZ",
+    "name": "Ihzaz Abrar Sadik",
+    "position": "Lecturer",
+    "email": "ihzaz.sadik@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZAZ",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1373482881"
+  },
+  {
+    "deskId": "",
+    "initial": "ZBH",
+    "name": "Md Zayed Bin Zahir Arju",
+    "position": "Lecturer",
+    "email": "zayed.zahir@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZBH",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1069510018"
+  },
+  {
+    "deskId": "4J68",
+    "initial": "ZHS",
+    "name": "Mr. Syed Zamil Hasan Shoumo",
+    "position": "Senior Lecturer",
+    "email": "shoumo.hasan@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZHS",
+    "boundingBox": {
+      "top": "59.027%",
+      "left": "10.501%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1316002656"
+  },
+  {
+    "deskId": "4M111",
+    "initial": "ZLNM",
+    "name": "Md. Zulkar Naim",
+    "position": "Lecturer",
+    "email": "zulkar.naim@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZLNM",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=244325450"
+  },
+  {
+    "deskId": "4J61",
+    "initial": "ZMD",
+    "name": "Mr. Zaber Mohammad",
+    "position": "Lecturer",
+    "email": "zaber.mohammad@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4J",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZMD",
+    "boundingBox": {
+      "top": "47.768%",
+      "left": "1.099%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1230181204"
+  },
+  {
+    "deskId": "4N156",
+    "initial": "ZYH",
+    "name": "Zayed Humayun",
+    "position": "Lecturer",
+    "email": "zayed.humayun@bracu.ac.bd",
+    "status": "Full Time",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZYH",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "58.608%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1608684850"
+  },
+  {
+    "deskId": "4F",
+    "initial": "ADR",
+    "name": "Mr. Md. Abdur Rahman",
+    "position": "C. Senior Lecturer",
+    "email": "abdur.rahman@bracu.ac.bd",
+    "status": "Contractual",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ADR",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1932984596"
+  },
+  {
+    "deskId": "4G15",
+    "initial": "SAS",
+    "name": "Dr. Md. Shafiul Alam Shuvo",
+    "position": "C. Professor",
+    "email": "ext.shafiul.shuvo@bracu.ac.bd",
+    "status": "Contractual",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SAS",
+    "boundingBox": {
+      "top": "57.097%",
+      "left": "52.747%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=440550316"
+  },
+  {
+    "deskId": "4G15",
+    "initial": "SHBZ",
+    "name": "Dr. Md Shamsuzzoha Bayzid",
+    "position": "C. Professor",
+    "email": "ext.shams.bayzid@bracu.ac.bd",
+    "status": "Contractual",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=SHBZ",
+    "boundingBox": {
+      "top": "57.097%",
+      "left": "52.747%",
+      "width": "3.907%",
+      "height": "4.021%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=127844029"
+  },
+  {
+    "deskId": "4F",
+    "initial": "ZBYR",
+    "name": "Zobayer Hasan",
+    "position": "C. Lecturer",
+    "email": "ext.zobayer.hasan@bracu.ac.bd",
+    "status": "Contractual",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list?search=ZBYR",
+    "boundingBox": null,
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit#gid=1604102668"
+  },
+  {
+    "deskId": "4M115",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4M",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "4.906%",
+      "left": "35.043%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4N139",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "49.573%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4N147",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "18.416%",
+      "left": "53.114%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4N166",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4N",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "15.440%",
+      "left": "62.149%",
+      "width": "3.419%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "TNMF",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4K",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "10.501%",
+      "width": "0.000%",
+      "height": "0.000%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4L98",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "20.507%",
+      "left": "24.054%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4L97",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "23.522%",
+      "left": "24.054%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4L96",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4L",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "26.538%",
+      "left": "24.054%",
+      "width": "2.686%",
+      "height": "2.815%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G07",
+    "initial": "",
+    "name": "Main Conference/Meeting Room",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "32.967%",
+      "width": "7.570%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G13",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "46.886%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G14",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "47.447%",
+      "left": "46.886%",
+      "width": "3.907%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G27",
+    "initial": "",
+    "name": "Praying Room (M)",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "5.951%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4G31",
+    "initial": "",
+    "name": "Small Conference/Meeting Room",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4G",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "86.691%",
+      "width": "4.884%",
+      "height": "3.820%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P194",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "41.013%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P193",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "43.828%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P188",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "52.272%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P187",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "55.086%",
+      "left": "65.690%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P186",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "55.086%",
+      "left": "68.132%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P183",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "49.457%",
+      "left": "73.016%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P182",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "52.272%",
+      "left": "78.144%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  },
+  {
+    "deskId": "4P181",
+    "initial": "",
+    "name": "Room / Area",
+    "position": "Room",
+    "email": "",
+    "status": "",
+    "zone": "4P",
+    "sdsLink": "https://cse.sds.bracu.ac.bd/faculty_list",
+    "boundingBox": {
+      "top": "55.086%",
+      "left": "78.144%",
+      "width": "2.442%",
+      "height": "2.614%"
+    },
+    "classScheduleLink": "https://docs.google.com/spreadsheets/d/1uCpxARIPFmkhL1BdzCL5dXmxO5CbNbFkKrgOCmUM6cA/edit?usp=drivesdk"
+  }
 ]

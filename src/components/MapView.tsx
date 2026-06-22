@@ -6,7 +6,7 @@ import SeatMap from "./SeatMap";
 import AnimatedPath from "./AnimatedPath";
 import FacultyModal from "./FacultyModal";
 import SearchBar from "./SearchBar";
-import { getPathToDesk } from "@/lib/pathfinding";
+import { getPathToDesk, getDeskCenter } from "@/lib/pathfinding";
 import type { Point } from "@/lib/pathfinding";
 import facultyData from "@/data/faculty.json";
 import { signOut, useSession } from "next-auth/react";
@@ -31,18 +31,21 @@ export default function MapView({
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomTarget, setZoomTarget] = useState({ x: 0, y: 0, scale: 1 });
 
-  // Get the zoom transform for a zone
-  const getZoomForZone = useCallback((zone: string) => {
-    const zoomTargets: Record<string, { x: number; y: number; scale: number }> = {
-      "4K": { x: -50, y: -350, scale: 2.2 },
-      "4J": { x: -50, y: -700, scale: 2.2 },
-      "4L": { x: -500, y: -350, scale: 2.5 },
-      "4M": { x: -650, y: 0, scale: 2 },
-      "4N": { x: -1100, y: 0, scale: 2 },
-      "4P": { x: -1400, y: -650, scale: 2.2 },
-      "4G": { x: -400, y: -550, scale: 2 },
-    };
-    return zoomTargets[zone] || { x: 0, y: 0, scale: 1 };
+  // Compute zoom transform to center a desk on screen
+  // The viewBox is 4095×2487, the map uses object-contain so it
+  // fills the container proportionally.
+  const getZoomForDesk = useCallback((deskId: string) => {
+    const center = getDeskCenter(deskId);
+    if (!center) {
+      return { x: 0, y: 0, scale: 1 };
+    }
+    const scale = 2.8;
+    const xPct = center.x / 4095; // 0..1
+    const yPct = center.y / 2487; // 0..1
+    // Translate in % of element dimensions to center the desk
+    const tx = (0.5 - xPct) * 100 * scale;
+    const ty = (0.5 - yPct) * 100 * scale;
+    return { x: tx, y: ty, scale };
   }, []);
 
   // Handle desk selection (from click or auto-select)
@@ -75,10 +78,10 @@ export default function MapView({
       setShowModal(false);
       setIsZoomed(false);
 
-      // Set zoom target for this zone
-      setZoomTarget(getZoomForZone(faculty.zone));
+      // Set zoom target for this desk
+      setZoomTarget(getZoomForDesk(deskId));
     },
-    [getZoomForZone]
+    [getZoomForDesk]
   );
 
   // Auto-select on mount if provided
@@ -91,13 +94,13 @@ export default function MapView({
     }
   }, [autoSelectDeskId, autoSelectInitial, selectDesk]);
 
-  // When path animation completes → zoom in
+  // When path animation completes → zoom in → then show modal
   const handlePathComplete = useCallback(() => {
     setIsZoomed(true);
-    // After zoom animation → show modal
+    // After zoom animation completes (~800ms spring), show modal
     setTimeout(() => {
       setShowModal(true);
-    }, 800);
+    }, 900);
   }, []);
 
   // Reset view
@@ -113,7 +116,6 @@ export default function MapView({
   // Handle desk click from map
   const handleDeskClick = useCallback(
     (deskId: string) => {
-      // If already showing something, reset first
       if (selectedDeskId) {
         handleReset();
         setTimeout(() => selectDesk(deskId), 300);
@@ -125,38 +127,38 @@ export default function MapView({
   );
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 overflow-hidden">
+    <div className="h-screen w-screen overflow-hidden relative bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 flex flex-col">
       {/* Header */}
-      <header className="relative z-30 flex items-center justify-between px-4 py-3 sm:px-6">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
+      <header className="relative z-30 flex items-center justify-between px-6 sm:px-8 py-4 flex-shrink-0">
+        <div className="flex items-center gap-4">
+          <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
             <img src="/logo.png" alt="BRACU CSE Logo" className="w-full h-full object-contain p-1" />
           </div>
           <div>
             <h1 className="text-white font-bold text-lg tracking-tight leading-tight">
               Faculty Desk Finder
             </h1>
-            <p className="text-slate-500 text-xs">BRACU CSE Department</p>
+            <p className="text-slate-500 text-xs mt-0.5">BRACU CSE Department</p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           {selectedDeskId && (
             <button
               onClick={handleReset}
-              className="px-4 py-2 text-sm font-medium text-white bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl transition-all"
+              className="px-5 py-2.5 text-sm font-medium text-white bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl transition-all"
             >
               ← Full Map
             </button>
           )}
           {session?.user && (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <span className="text-slate-400 text-xs hidden sm:block">
                 {session.user.email}
               </span>
               <button
                 onClick={() => signOut()}
-                className="px-3 py-2 text-xs font-medium text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-all"
+                className="px-4 py-2.5 text-xs font-medium text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-all"
               >
                 Sign out
               </button>
@@ -166,22 +168,24 @@ export default function MapView({
       </header>
 
       {/* Search bar */}
-      <div className="relative z-30 px-4 sm:px-6 pb-4">
+      <div className="relative z-30 px-6 sm:px-8 pb-4 flex-shrink-0">
         <SearchBar faculty={facultyData} />
       </div>
 
-      {/* Map container with zoom */}
-      <div className="relative flex-1 px-2 sm:px-4 pb-4 overflow-hidden">
+      {/* Map container — fills remaining viewport, no scroll.
+          The SVG inside uses preserveAspectRatio="xMidYMid meet" so it
+          will always show the FULL map without cropping or stretching. */}
+      <div className="relative flex-1 min-h-0 px-4 sm:px-6 pb-4 overflow-hidden flex items-center justify-center">
         <motion.div
-          className="relative w-full"
+          className="relative w-full h-full flex items-center justify-center"
           animate={
             isZoomed
               ? {
                   scale: zoomTarget.scale,
-                  x: zoomTarget.x,
-                  y: zoomTarget.y,
+                  x: `${zoomTarget.x}%`,
+                  y: `${zoomTarget.y}%`,
                 }
-              : { scale: 1, x: 0, y: 0 }
+              : { scale: 1, x: "0%", y: "0%" }
           }
           transition={{
             type: "spring",
@@ -189,9 +193,9 @@ export default function MapView({
             stiffness: 200,
             duration: 0.8,
           }}
-          style={{ transformOrigin: "top left" }}
+          style={{ transformOrigin: "center center" }}
         >
-          {/* The SVG map */}
+          {/* The SVG map with image background */}
           <SeatMap
             desks={facultyData}
             selectedDeskId={selectedDeskId}
@@ -218,7 +222,7 @@ export default function MapView({
         </motion.div>
       </div>
 
-      {/* Faculty modal */}
+      {/* Faculty modal — floating bottom-right, NO blur backdrop */}
       <FacultyModal
         faculty={selectedFaculty}
         isOpen={showModal}
@@ -226,7 +230,7 @@ export default function MapView({
       />
 
       {/* Zone legend */}
-      <div className="fixed bottom-4 left-4 z-20 flex flex-wrap gap-1.5 p-2 bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-xl">
+      <div className="fixed bottom-6 left-6 z-20 flex flex-wrap gap-2 p-3 bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-xl">
         {[
           { zone: "4K", color: "#dc2626", label: "4K" },
           { zone: "4J", color: "#16a34a", label: "4J" },
@@ -238,13 +242,13 @@ export default function MapView({
         ].map((z) => (
           <div
             key={z.zone}
-            className="flex items-center gap-1 px-2 py-1 rounded-md"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md"
           >
             <div
-              className="w-3 h-3 rounded-sm"
+              className="w-3.5 h-3.5 rounded-sm"
               style={{ background: z.color }}
             />
-            <span className="text-[10px] text-slate-400 font-medium">
+            <span className="text-[11px] text-slate-400 font-medium">
               {z.label}
             </span>
           </div>
