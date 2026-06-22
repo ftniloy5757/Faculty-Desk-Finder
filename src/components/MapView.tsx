@@ -1,15 +1,15 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import type { ReactZoomPanPinchRef } from "react-zoom-pan-pinch";
 import SeatMap from "./SeatMap";
-import AnimatedPath from "./AnimatedPath";
 import FacultyModal from "./FacultyModal";
 import SearchBar from "./SearchBar";
-import { getPathToDesk, getDeskCenter } from "@/lib/pathfinding";
-import type { Point } from "@/lib/pathfinding";
 import facultyData from "@/data/faculty.json";
 import { signOut, useSession } from "next-auth/react";
+import { getDeskCenter } from "@/data/deskOverlays";
 
 interface MapViewProps {
   autoSelectDeskId?: string;
@@ -25,33 +25,24 @@ export default function MapView({
   const [selectedFaculty, setSelectedFaculty] = useState<
     (typeof facultyData)[0] | null
   >(null);
-  const [pathPoints, setPathPoints] = useState<Point[]>([]);
-  const [showPath, setShowPath] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [isZoomed, setIsZoomed] = useState(false);
-  const [zoomTarget, setZoomTarget] = useState({ x: 0, y: 0, scale: 1 });
+  const [loggedCoords, setLoggedCoords] = useState<{ x: number; y: number } | null>(null);
 
-  // Compute zoom transform to center a desk on screen
-  // The viewBox is 4095×2487, the map uses object-contain so it
-  // fills the container proportionally.
-  const getZoomForDesk = useCallback((deskId: string) => {
-    const center = getDeskCenter(deskId);
-    if (!center) {
-      return { x: 0, y: 0, scale: 1 };
+  const transformRef = useRef<ReactZoomPanPinchRef>(null);
+
+  // Zoom to a specific desk's SVG element coordinates using react-zoom-pan-pinch zoomToElement
+  const zoomToDesk = useCallback((deskId: string) => {
+    if (transformRef.current) {
+      // Zoom directly to the element ID (desk-ID)
+      // The element must be rendered inside TransformComponent
+      // Scaling: 3.2, Duration: 800ms
+      transformRef.current.zoomToElement(`desk-${deskId}`, 3.2, 800);
     }
-    const scale = 2.8;
-    const xPct = center.x / 4095; // 0..1
-    const yPct = center.y / 2487; // 0..1
-    // Translate in % of element dimensions to center the desk
-    const tx = (0.5 - xPct) * 100 * scale;
-    const ty = (0.5 - yPct) * 100 * scale;
-    return { x: tx, y: ty, scale };
   }, []);
 
-  // Handle desk selection (from click or auto-select)
+  // Handle desk selection (from click or search)
   const selectDesk = useCallback(
     (deskId: string, initial?: string) => {
-      // Find the faculty member
       let faculty = facultyData.find(
         (f) =>
           f.deskId === deskId &&
@@ -70,61 +61,60 @@ export default function MapView({
 
       setSelectedDeskId(deskId);
       setSelectedFaculty(faculty);
-
-      // Calculate path
-      const points = getPathToDesk(deskId, faculty.zone);
-      setPathPoints(points);
-      setShowPath(true);
       setShowModal(false);
-      setIsZoomed(false);
 
-      // Set zoom target for this desk
-      setZoomTarget(getZoomForDesk(deskId));
+      // Update browser URL history without causing layout/route refresh glitches
+      window.history.pushState(null, "", `/desk/${deskId}?initial=${faculty.initial}`);
+
+      // Smoothly pan & zoom to the selected desk, then slide in the modal
+      setTimeout(() => {
+        zoomToDesk(deskId);
+        setTimeout(() => {
+          setShowModal(true);
+        }, 900);
+      }, 100);
     },
-    [getZoomForDesk]
+    [zoomToDesk]
   );
 
-  // Auto-select on mount if provided
+  // Auto-select on mount if provided (e.g. from deep link)
   useEffect(() => {
     if (autoSelectDeskId) {
       const timer = setTimeout(() => {
         selectDesk(autoSelectDeskId, autoSelectInitial);
-      }, 500);
+      }, 800); // 800ms delay to let the map component settle in DOM
       return () => clearTimeout(timer);
     }
   }, [autoSelectDeskId, autoSelectInitial, selectDesk]);
 
-  // When path animation completes → zoom in → then show modal
-  const handlePathComplete = useCallback(() => {
-    setIsZoomed(true);
-    // After zoom animation completes (~800ms spring), show modal
-    setTimeout(() => {
-      setShowModal(true);
-    }, 900);
-  }, []);
-
-  // Reset view
+  // Reset viewport zoom/pan and clear faculty state
   const handleReset = useCallback(() => {
     setSelectedDeskId(null);
     setSelectedFaculty(null);
-    setShowPath(false);
     setShowModal(false);
-    setIsZoomed(false);
-    setZoomTarget({ x: 0, y: 0, scale: 1 });
+    transformRef.current?.resetTransform(800);
+    // Reset browser URL to base path
+    window.history.pushState(null, "", "/");
   }, []);
 
-  // Handle desk click from map
+  // Handle desk click from SeatMap
   const handleDeskClick = useCallback(
     (deskId: string) => {
-      if (selectedDeskId) {
+      if (selectedDeskId === deskId) {
+        // Toggle off if clicking the same desk
         handleReset();
-        setTimeout(() => selectDesk(deskId), 300);
       } else {
         selectDesk(deskId);
       }
     },
-    [selectedDeskId, handleReset, selectDesk]
+    [selectedDeskId, selectDesk, handleReset]
   );
+
+  // Log clicked coordinates in Dev Mode (bubbled from SeatMap)
+  const handleMapClick = useCallback((x: number, y: number) => {
+    setLoggedCoords({ x, y });
+    console.log(`Dev Mode - Clicked Coordinates: x=${x}, y=${y}`);
+  }, []);
 
   return (
     <div className="h-screen w-screen overflow-hidden relative bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 flex flex-col">
@@ -146,7 +136,7 @@ export default function MapView({
           {selectedDeskId && (
             <button
               onClick={handleReset}
-              className="px-5 py-2.5 text-sm font-medium text-white bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl transition-all"
+              className="px-5 py-2.5 text-sm font-medium text-white bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl transition-all cursor-pointer"
             >
               ← Full Map
             </button>
@@ -158,7 +148,7 @@ export default function MapView({
               </span>
               <button
                 onClick={() => signOut()}
-                className="px-4 py-2.5 text-xs font-medium text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-all"
+                className="px-4 py-2.5 text-xs font-medium text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-all flex items-center gap-2 cursor-pointer"
               >
                 Sign out
               </button>
@@ -167,70 +157,69 @@ export default function MapView({
         </div>
       </header>
 
-      {/* Search bar */}
+      {/* Floating Search bar container */}
       <div className="relative z-30 px-6 sm:px-8 pb-4 flex-shrink-0">
-        <SearchBar faculty={facultyData} />
+        <SearchBar faculty={facultyData} onSelectFaculty={(item) => selectDesk(item.deskId, item.initial)} />
       </div>
 
-      {/* Map container — fills remaining viewport, no scroll.
-          The SVG inside uses preserveAspectRatio="xMidYMid meet" so it
-          will always show the FULL map without cropping or stretching. */}
-      <div className="relative flex-1 min-h-0 px-4 sm:px-6 pb-4 overflow-hidden flex items-center justify-center">
-        <motion.div
-          className="relative w-full h-full flex items-center justify-center"
-          animate={
-            isZoomed
-              ? {
-                  scale: zoomTarget.scale,
-                  x: `${zoomTarget.x}%`,
-                  y: `${zoomTarget.y}%`,
-                }
-              : { scale: 1, x: "0%", y: "0%" }
-          }
-          transition={{
-            type: "spring",
-            damping: 30,
-            stiffness: 200,
-            duration: 0.8,
-          }}
-          style={{ transformOrigin: "center center" }}
-        >
-          {/* The SVG map with image background */}
-          <SeatMap
-            desks={facultyData}
-            selectedDeskId={selectedDeskId}
-            onDeskClick={handleDeskClick}
-          />
-
-          {/* Animated path overlay */}
-          <AnimatePresence>
-            {showPath && pathPoints.length > 1 && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="absolute inset-0"
-              >
-                <AnimatedPath
-                  points={pathPoints}
-                  onComplete={handlePathComplete}
-                  duration={2}
+      {/* Main Map Viewer — Fits perfectly inside the remaining viewport without screen scrolls */}
+      <div className="relative flex-1 min-h-0 px-6 pb-6 overflow-hidden flex items-center justify-center">
+        <div className="w-full h-full border border-white/10 rounded-3xl overflow-hidden bg-slate-950/50 backdrop-blur-md relative shadow-2xl">
+          <TransformWrapper
+            ref={transformRef}
+            initialScale={1}
+            minScale={0.8}
+            maxScale={8}
+            centerOnInit={true}
+            limitToBounds={true}
+            doubleClick={{ disabled: false }}
+            panning={{ velocityDisabled: false }}
+          >
+            <TransformComponent
+              wrapperClass="!w-full !h-full"
+              contentClass="!w-full !h-full flex items-center justify-center"
+            >
+              <div className="w-full h-full flex items-center justify-center p-4">
+                <SeatMap
+                  desks={facultyData}
+                  selectedDeskId={selectedDeskId}
+                  onDeskClick={handleDeskClick}
+                  onMapClick={handleMapClick}
                 />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
+              </div>
+            </TransformComponent>
+          </TransformWrapper>
+        </div>
       </div>
 
-      {/* Faculty modal — floating bottom-right, NO blur backdrop */}
+      {/* Fixed details side panel card (Z-50, sits outside zoom component, prevents distortion) */}
       <FacultyModal
         faculty={selectedFaculty}
         isOpen={showModal}
         onClose={handleReset}
       />
 
+      {/* Dev Mode Coordinate Logger Indicator */}
+      {loggedCoords && (
+        <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-slate-900/95 border border-white/15 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-4 backdrop-blur-xl">
+          <div className="text-xs font-mono">
+            <div className="text-[10px] text-indigo-400 font-sans font-bold uppercase tracking-wider mb-0.5">Dev Mode Click Coordinates</div>
+            <span className="text-slate-400 mr-2">x:</span>{loggedCoords.x}
+            <span className="text-slate-400 ml-3 mr-2">y:</span>{loggedCoords.y}
+          </div>
+          <button
+            onClick={() => setLoggedCoords(null)}
+            className="p-1 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition-colors cursor-pointer"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      )}
+
       {/* Zone legend */}
-      <div className="fixed bottom-6 left-6 z-20 flex flex-wrap gap-2 p-3 bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-xl">
+      <div className="fixed bottom-6 left-6 z-20 flex flex-wrap gap-2 p-3 bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-xl max-w-[calc(100%-3rem)] sm:max-w-xs">
         {[
           { zone: "4K", color: "#dc2626", label: "4K" },
           { zone: "4J", color: "#16a34a", label: "4J" },
@@ -242,13 +231,13 @@ export default function MapView({
         ].map((z) => (
           <div
             key={z.zone}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md"
+            className="flex items-center gap-1.5 px-2 py-1 rounded-md"
           >
             <div
-              className="w-3.5 h-3.5 rounded-sm"
+              className="w-3 h-3 rounded-sm"
               style={{ background: z.color }}
             />
-            <span className="text-[11px] text-slate-400 font-medium">
+            <span className="text-[10px] text-slate-400 font-medium">
               {z.label}
             </span>
           </div>

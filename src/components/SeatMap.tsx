@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { DESK_OVERLAYS } from "@/data/deskOverlays";
 
 // Zone color definitions matching the seat map
 export const ZONE_COLORS: Record<string, { bg: string; border: string; text: string; hoverBg: string }> = {
@@ -23,22 +24,39 @@ interface SeatMapProps {
   desks: DeskData[];
   selectedDeskId?: string | null;
   onDeskClick?: (deskId: string) => void;
+  onMapClick?: (x: number, y: number) => void;
 }
-
-import { DESK_OVERLAYS, getDeskCenter } from "@/lib/pathfinding";
 
 export default function SeatMap({
   desks,
   selectedDeskId,
   onDeskClick,
+  onMapClick,
 }: SeatMapProps) {
   // Build a set of occupied desk IDs for quick lookup
-  const occupiedDesks = new Map<string, DeskData>();
-  for (const d of desks) {
-    if (d.initial && d.initial.trim()) {
-      occupiedDesks.set(d.deskId, d);
+  const occupiedDesks = React.useMemo(() => {
+    const map = new Map<string, DeskData>();
+    for (const d of desks) {
+      if (d.initial && d.initial.trim()) {
+        map.set(d.deskId, d);
+      }
     }
-  }
+    return map;
+  }, [desks]);
+
+  const handleSvgClick = (e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget;
+    const point = svg.createSVGPoint();
+    point.x = e.clientX;
+    point.y = e.clientY;
+    const ctm = svg.getScreenCTM();
+    if (ctm) {
+      const svgPoint = point.matrixTransform(ctm.inverse());
+      const absX = Math.round(svgPoint.x);
+      const absY = Math.round(svgPoint.y);
+      onMapClick?.(absX, absY);
+    }
+  };
 
   return (
     <svg
@@ -46,20 +64,22 @@ export default function SeatMap({
       className="w-full h-full"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
+      onClick={handleSvgClick}
     >
       <defs>
         <style>{`
           .overlay-rect {
-            transition: opacity 0.2s ease, stroke-width 0.2s ease;
+            transition: opacity 0.2s ease, fill 0.2s ease;
           }
           .overlay-rect:hover {
+            fill: #3b82f6 !important;
             opacity: 0.25 !important;
             cursor: pointer;
           }
           @keyframes pulse-ring {
-            0% { opacity: 0.6; stroke-width: 6; }
-            50% { opacity: 1; stroke-width: 10; }
-            100% { opacity: 0.6; stroke-width: 6; }
+            0% { opacity: 0.5; stroke-width: 6; r: 25; }
+            50% { opacity: 1; stroke-width: 10; r: 35; }
+            100% { opacity: 0.5; stroke-width: 6; r: 25; }
           }
           .desk-pulse {
             animation: pulse-ring 1.5s ease-in-out infinite;
@@ -86,7 +106,7 @@ export default function SeatMap({
 
         return (
           <g key={ov.id} id={`desk-${ov.id}`}>
-            {/* Invisible clickable area */}
+            {/* Clickable desk area */}
             <rect
               x={ov.x}
               y={ov.y}
@@ -99,19 +119,22 @@ export default function SeatMap({
               strokeWidth={isSelected ? 4 : 0}
               className={hasOccupant ? "overlay-rect" : ""}
               style={{ cursor: hasOccupant ? "pointer" : "default" }}
-              onClick={() => hasOccupant && onDeskClick?.(ov.id)}
+              onClick={(e) => {
+                if (hasOccupant) {
+                  e.stopPropagation(); // Prevent triggering map click coordinate logger
+                  onDeskClick?.(ov.id);
+                }
+              }}
             />
             {/* Pulse ring for selected desk */}
             {isSelected && (
-              <rect
-                x={ov.x - 3}
-                y={ov.y - 3}
-                width={ov.w + 6}
-                height={ov.h + 6}
-                rx={6}
+              <circle
+                cx={ov.x + ov.w / 2}
+                cy={ov.y + ov.h / 2}
+                r={30}
                 fill="none"
                 stroke="#3b82f6"
-                strokeWidth={6}
+                strokeWidth={8}
                 className="desk-pulse"
               />
             )}

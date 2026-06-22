@@ -14,9 +14,10 @@ interface FacultyItem {
 
 interface SearchBarProps {
   faculty: FacultyItem[];
+  onSelectFaculty?: (item: FacultyItem) => void;
 }
 
-export default function SearchBar({ faculty }: SearchBarProps) {
+export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) {
   const [query, setQuery] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -67,7 +68,11 @@ export default function SearchBar({ faculty }: SearchBarProps) {
   function handleSelect(item: FacultyItem) {
     setQuery("");
     setIsOpen(false);
-    router.push(`/desk/${item.deskId}?initial=${item.initial}`);
+    if (onSelectFaculty) {
+      onSelectFaculty(item);
+    } else {
+      router.push(`/desk/${item.deskId}?initial=${item.initial}`);
+    }
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {

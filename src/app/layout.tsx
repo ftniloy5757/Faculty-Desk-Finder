@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Faculty Desk Finder | BRACU CSE",
   description:
-    "Find any faculty desk in the BRACU CSE Department with interactive pathfinding and animated navigation.",
+    "Find any faculty desk in the BRACU CSE Department with an interactive seat map and animated zoom targeting.",
   keywords: [
     "BRACU",
     "CSE",
