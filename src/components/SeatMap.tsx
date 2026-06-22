@@ -89,7 +89,7 @@ export default function SeatMap({
 
       {/* Background map image */}
       <image
-        href="/map.png"
+        href="/map.jpg"
         x="0"
         y="0"
         width="4095"

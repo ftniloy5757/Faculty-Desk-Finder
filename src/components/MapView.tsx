@@ -176,17 +176,15 @@ export default function MapView({
             panning={{ velocityDisabled: false }}
           >
             <TransformComponent
-              wrapperClass="!w-full !h-full"
-              contentClass="!w-full !h-full flex items-center justify-center"
+              wrapperStyle={{ width: "100%", height: "100%" }}
+              contentStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}
             >
-              <div className="w-full h-full flex items-center justify-center p-4">
-                <SeatMap
-                  desks={facultyData}
-                  selectedDeskId={selectedDeskId}
-                  onDeskClick={handleDeskClick}
-                  onMapClick={handleMapClick}
-                />
-              </div>
+              <SeatMap
+                desks={facultyData}
+                selectedDeskId={selectedDeskId}
+                onDeskClick={handleDeskClick}
+                onMapClick={handleMapClick}
+              />
             </TransformComponent>
           </TransformWrapper>
         </div>
