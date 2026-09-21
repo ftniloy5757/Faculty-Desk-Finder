@@ -16,27 +16,28 @@ html {
 
 body {
   font-family: var(--font-inter);
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #060b18;
+  color: #f1f5f9;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
+/* Professional Navy/Slate custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: #0a1226;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #475569;
+  background: #334155;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #475569;
 }
 
 /* Smooth transitions for SVG elements */
@@ -49,14 +50,14 @@ svg .desk-group {
 }
 
 svg .desk-group:hover {
-  filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.4));
+  filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.4));
 }
 
 /* Selection animation */
 @keyframes desk-glow {
   0%,
   100% {
-    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.6));
+    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.6));
   }
   50% {
     filter: drop-shadow(0 0 16px rgba(59, 130, 246, 0.9));

@@ -72,9 +72,9 @@ export default function SeatMap({
       onClick={handleSvgClick}
     >
       <defs>
-        {/* Neon Path Glow Filter */}
+        {/* Navy/Blue Path Glow Filter */}
         <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="7" result="blur" />
+          <feGaussianBlur stdDeviation="8" result="blur" />
           <feMerge>
             <feMergeNode in="blur" />
             <feMergeNode in="blur" />
@@ -84,7 +84,7 @@ export default function SeatMap({
 
         {/* Drop Shadow for Beacon Pin */}
         <filter id="beacon-shadow" x="-30%" y="-30%" width="160%" height="160%">
-          <feDropShadow dx="0" dy="12" stdDeviation="10" floodColor="#000" floodOpacity="0.45" />
+          <feDropShadow dx="0" dy="12" stdDeviation="10" floodColor="#000" floodOpacity="0.5" />
         </filter>
 
         <style>{`
@@ -92,7 +92,7 @@ export default function SeatMap({
             transition: opacity 0.2s ease, fill 0.2s ease;
           }
           .overlay-rect:hover {
-            fill: #38bdf8 !important;
+            fill: #2563eb !important;
             opacity: 0.3 !important;
             cursor: pointer;
           }
@@ -102,9 +102,9 @@ export default function SeatMap({
             100% { transform: translateY(0px); }
           }
           @keyframes ripple-pulse {
-            0% { r: 20px; opacity: 0.85; stroke-width: 7; }
-            50% { r: 54px; opacity: 0.25; stroke-width: 4; }
-            100% { r: 20px; opacity: 0.85; stroke-width: 7; }
+            0% { r: 20px; opacity: 0.9; stroke-width: 7; }
+            50% { r: 56px; opacity: 0.2; stroke-width: 4; }
+            100% { r: 20px; opacity: 0.9; stroke-width: 7; }
           }
           .beacon-marker {
             animation: beacon-float 2s ease-in-out infinite;
@@ -126,16 +126,16 @@ export default function SeatMap({
         preserveAspectRatio="xMidYMid meet"
       />
 
-      {/* Orthogonal Hallway Path - Glow Layer */}
+      {/* Orthogonal Hallway Path - Outer Navy Glow Layer */}
       {pathD && shouldAnimatePath && (
         <motion.path
           d={pathD}
           fill="none"
-          stroke="#0284c7"
-          strokeWidth="18"
+          stroke="#1d4ed8"
+          strokeWidth="20"
           strokeLinecap="round"
           strokeLinejoin="round"
-          opacity="0.55"
+          opacity="0.6"
           filter="url(#neon-glow)"
           style={{ vectorEffect: "non-scaling-stroke" }}
           initial={{ pathLength: 0 }}
@@ -144,12 +144,12 @@ export default function SeatMap({
         />
       )}
 
-      {/* Orthogonal Hallway Path - Core Laser Line (2.3s animation) */}
+      {/* Orthogonal Hallway Path - Core Royal Blue Laser Line (2.3s animation) */}
       {pathD && (
         <motion.path
           d={pathD}
           fill="none"
-          stroke="#38bdf8"
+          stroke="#3b82f6"
           strokeWidth="6.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -185,7 +185,7 @@ export default function SeatMap({
               rx={6}
               fill={isSelected ? colors.bg : "transparent"}
               opacity={isSelected ? 0.35 : 0}
-              stroke={isSelected ? "#38bdf8" : "none"}
+              stroke={isSelected ? "#2563eb" : "none"}
               strokeWidth={isSelected ? 5 : 0}
               className={hasOccupant ? "overlay-rect" : ""}
               style={{ cursor: hasOccupant ? "pointer" : "default" }}
@@ -206,32 +206,32 @@ export default function SeatMap({
                   cy={centerY}
                   r={24}
                   fill="none"
-                  stroke="#38bdf8"
+                  stroke="#2563eb"
                   strokeWidth={6}
                   className="ripple-ring"
                 />
 
                 {/* Animated Floating Map Pin Beacon */}
                 <g className="beacon-marker" filter="url(#beacon-shadow)">
-                  {/* Downward Laser Guide Line */}
+                  {/* Downward Guide Line */}
                   <line
                     x1={centerX}
                     y1={centerY - 85}
                     x2={centerX}
                     y2={centerY}
-                    stroke="#38bdf8"
+                    stroke="#3b82f6"
                     strokeWidth="3.5"
                     strokeDasharray="4 2"
-                    opacity="0.85"
+                    opacity="0.9"
                   />
-                  {/* Floating Map Pin Head */}
-                  <circle cx={centerX} cy={centerY - 90} r={30} fill="#0284c7" stroke="#ffffff" strokeWidth={5} />
+                  {/* Floating Map Pin Head in Executive Navy & White */}
+                  <circle cx={centerX} cy={centerY - 90} r={30} fill="#1e40af" stroke="#ffffff" strokeWidth={5} />
                   <circle cx={centerX} cy={centerY - 90} r={13} fill="#ffffff" />
                   <polygon
                     points={`${centerX - 18},${centerY - 76} ${centerX + 18},${centerY - 76} ${centerX},${centerY - 42}`}
-                    fill="#0284c7"
+                    fill="#1e40af"
                     stroke="#ffffff"
-                    strokeWidth={3}
+                    strokeWidth="2.5"
                   />
                 </g>
               </g>

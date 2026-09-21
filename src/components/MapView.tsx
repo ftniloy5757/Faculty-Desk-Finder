@@ -37,8 +37,7 @@ export default function MapView({
   // Smoothly zoom in to the target desk
   const zoomToDesk = useCallback((deskId: string) => {
     if (transformRef.current) {
-      // Zoom directly to the element ID (desk-ID)
-      transformRef.current.zoomToElement(`desk-${deskId}`, 2.9, 850);
+      transformRef.current.zoomToElement(`desk-${deskId}`, 2.8, 850);
     }
   }, []);
 
@@ -46,7 +45,6 @@ export default function MapView({
   const handlePathAnimationComplete = useCallback(() => {
     if (selectedDeskId) {
       zoomToDesk(selectedDeskId);
-      // Reveal the compact modal after the zoom settling period (~850ms)
       setTimeout(() => {
         setShowModal(true);
       }, 850);
@@ -122,11 +120,12 @@ export default function MapView({
     setShowModal(false);
     setPathD("");
     setShouldAnimatePath(false);
-    transformRef.current?.resetTransform(800);
-    window.history.pushState(null, "", "/");
+
+    if (transformRef.current) {
+      transformRef.current.resetTransform(900, "easeInOutCubic");
+    }
   }, []);
 
-  // Handle desk click from SeatMap
   const handleDeskClick = useCallback(
     (deskId: string) => {
       if (selectedDeskId === deskId) {
@@ -145,62 +144,78 @@ export default function MapView({
   }, []);
 
   return (
-    <div className="h-screen w-screen overflow-hidden relative bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 flex flex-col">
-      {/* Header */}
-      <header className="relative z-30 flex items-center justify-between px-6 sm:px-8 py-3.5 flex-shrink-0 border-b border-white/5 bg-slate-950/40 backdrop-blur-xl">
-        <div className="flex items-center gap-3.5">
-          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10 flex-shrink-0">
-            <Image src="/logo.png" alt="BRACU CSE Logo" width={40} height={40} className="w-full h-full object-contain p-1" priority />
-          </div>
-          <div>
-            <h1 className="text-white font-bold text-base sm:text-lg tracking-tight leading-tight">
-              Faculty Desk Finder
-            </h1>
-            <p className="text-slate-400 text-xs mt-0.5 font-medium">Department of Computer Science & Engineering</p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 sm:gap-3">
-          {selectedDeskId && (
-            <button
-              onClick={handleReset}
-              className="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 border border-indigo-400/30 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
-            >
-              <span>←</span>
-              <span>Full Map</span>
-            </button>
-          )}
-
-          {session?.user && (
-            <div className="flex items-center gap-2 pl-2 border-l border-white/10">
-              <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">
-                <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-[10px] font-bold text-white shadow-sm flex-shrink-0">
-                  {session.user.email ? session.user.email[0].toUpperCase() : "U"}
-                </div>
-                <span className="text-slate-300 text-xs font-mono font-medium max-w-[170px] lg:max-w-[240px] truncate">
-                  {session.user.email}
-                </span>
+    <div className="h-screen w-screen overflow-hidden relative bg-[#060b18] flex flex-col">
+      {/* Symmetrical Executive Navigation Header */}
+      <header className="relative z-30 px-6 py-3 sm:py-3.5 flex-shrink-0 border-b border-slate-800/90 bg-[#080e22]/95 backdrop-blur-xl">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4 max-w-[1920px] mx-auto">
+          {/* Left Column: Branding */}
+          <div className="flex items-center gap-3.5 flex-shrink-0 w-full md:w-auto justify-between md:justify-start">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md overflow-hidden border border-slate-700/50 flex-shrink-0">
+                <Image src="/logo.png" alt="BRACU CSE Logo" width={40} height={40} className="w-full h-full object-contain p-1" priority />
               </div>
-              <button
-                onClick={() => signOut()}
-                className="px-3 py-1.5 text-xs font-semibold text-slate-400 hover:text-red-300 bg-white/[0.04] hover:bg-red-500/10 border border-white/10 hover:border-red-500/30 rounded-xl transition-all cursor-pointer shadow-sm"
-                title="Sign out of your session"
-              >
-                Sign out
-              </button>
+              <div>
+                <h1 className="text-white font-bold text-base sm:text-lg tracking-tight leading-tight">
+                  Faculty Desk Finder
+                </h1>
+                <p className="text-slate-400 text-xs font-medium">Department of Computer Science & Engineering</p>
+              </div>
             </div>
-          )}
+
+            {/* Mobile-only Reset button */}
+            {selectedDeskId && (
+              <button
+                onClick={handleReset}
+                className="md:hidden px-3 py-1.5 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-600 border border-blue-500/40 rounded-lg transition-all shadow-sm"
+              >
+                ← Full Map
+              </button>
+            )}
+          </div>
+
+          {/* Center Column: Perfectly Symmetrical Search Bar */}
+          <div className="w-full md:flex-1 md:max-w-md lg:max-w-lg xl:max-w-xl">
+            <SearchBar faculty={facultyData} onSelectFaculty={(item) => selectDesk(item.deskId, item.initial)} />
+          </div>
+
+          {/* Right Column: Controls & Profile */}
+          <div className="hidden md:flex items-center justify-end gap-3 flex-shrink-0 min-w-[200px]">
+            {selectedDeskId && (
+              <button
+                onClick={handleReset}
+                className="px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-600 border border-blue-500/40 rounded-xl transition-all shadow-sm cursor-pointer flex items-center gap-1.5"
+              >
+                <span>←</span>
+                <span>Full Map</span>
+              </button>
+            )}
+
+            {session?.user && (
+              <div className="flex items-center gap-2 pl-2 border-l border-slate-800">
+                <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-700/60">
+                  <div className="w-6 h-6 rounded-full bg-blue-700 flex items-center justify-center text-[10px] font-bold text-white shadow-sm flex-shrink-0">
+                    {session.user.email ? session.user.email[0].toUpperCase() : "U"}
+                  </div>
+                  <span className="text-slate-300 text-xs font-mono font-medium max-w-[150px] truncate">
+                    {session.user.email}
+                  </span>
+                </div>
+                <button
+                  onClick={() => signOut()}
+                  className="px-3 py-1.5 text-xs font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700/80 rounded-xl transition-all cursor-pointer shadow-sm"
+                  title="Sign out of your session"
+                >
+                  Sign out
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </header>
 
-      {/* Floating Search Bar */}
-      <div className="relative z-30 px-6 sm:px-8 py-3 flex-shrink-0">
-        <SearchBar faculty={facultyData} onSelectFaculty={(item) => selectDesk(item.deskId, item.initial)} />
-      </div>
-
-      {/* Main Map Canvas Area */}
-      <div className="relative flex-1 min-h-0 px-4 sm:px-6 pb-4 sm:pb-6 overflow-hidden flex items-center justify-center">
-        <div className="w-full h-full border border-white/10 rounded-3xl overflow-hidden bg-slate-950/60 backdrop-blur-md relative shadow-2xl">
+      {/* Main Map Canvas Area with Symmetrical Borders */}
+      <div className="relative flex-1 min-h-0 px-4 sm:px-6 pt-3 pb-4 sm:pb-6 overflow-hidden flex items-center justify-center">
+        <div className="w-full h-full border border-slate-800/90 rounded-2xl overflow-hidden bg-[#060b18] relative shadow-2xl">
           <TransformWrapper
             ref={transformRef}
             initialScale={1}
@@ -235,16 +250,42 @@ export default function MapView({
         </div>
       </div>
 
-      {/* Compact, Non-Blocking Faculty Details Modal */}
+      {/* Symmetrical Non-Blocking Faculty Details Modal */}
       <FacultyModal
         faculty={selectedFaculty}
         isOpen={showModal}
         onClose={handleReset}
       />
 
+      {/* Developer Courtesy Notice - Exact Bottom Center */}
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-20 pointer-events-none select-none">
+        <div className="px-4 py-1.5 rounded-full bg-[#080e22]/95 backdrop-blur-md border border-slate-700/80 shadow-xl flex items-center gap-2 text-xs font-medium text-slate-300">
+          <span>© 2026 - Farhan T. Niloy</span>
+        </div>
+      </div>
+
+      {/* Symmetrical Floating Zone Legend - Bottom Left */}
+      <div className="fixed bottom-4 left-16 z-20 hidden lg:flex items-center gap-1.5 px-3.5 py-2 bg-[#080e22]/95 backdrop-blur-xl border border-slate-700/80 rounded-xl shadow-2xl">
+        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mr-1.5">Zones:</span>
+        {[
+          { zone: "4K", color: "#ef4444", label: "4K" },
+          { zone: "4J", color: "#22c55e", label: "4J" },
+          { zone: "4L", color: "#a855f7", label: "4L" },
+          { zone: "4M", color: "#facc15", label: "4M" },
+          { zone: "4N", color: "#b45309", label: "4N" },
+          { zone: "4P", color: "#e2b17a", label: "4P" },
+          { zone: "4G", color: "#64748b", label: "4G Offices" },
+        ].map((z) => (
+          <div key={z.zone} className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-slate-800/60 border border-slate-700/50">
+            <div className="w-2.5 h-2.5 rounded-full shadow-sm" style={{ background: z.color }} />
+            <span className="text-xs text-slate-200 font-semibold">{z.label}</span>
+          </div>
+        ))}
+      </div>
+
       {/* Dev Mode Coordinate Logger */}
       {loggedCoords && (
-        <div className="fixed bottom-5 left-5 z-50 bg-slate-900/95 border border-white/15 text-white px-4 py-2.5 rounded-xl shadow-2xl flex items-center gap-3 backdrop-blur-xl text-xs font-mono">
+        <div className="fixed bottom-14 left-6 z-50 bg-[#080e22]/95 border border-slate-800 text-white px-4 py-2.5 rounded-xl shadow-2xl flex items-center gap-3 backdrop-blur-xl text-xs font-mono">
           <div>
             <span className="text-slate-400 mr-1.5">X:</span>{loggedCoords.x}
             <span className="text-slate-400 ml-2.5 mr-1.5">Y:</span>{loggedCoords.y}
@@ -257,25 +298,6 @@ export default function MapView({
           </button>
         </div>
       )}
-
-      {/* Zone Legend */}
-      <div className="fixed bottom-6 left-6 z-20 hidden md:flex items-center gap-1.5 px-3 py-2 bg-slate-900/90 backdrop-blur-xl border border-white/15 rounded-2xl shadow-2xl">
-        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Zones:</span>
-        {[
-          { zone: "4K", color: "#ef4444", label: "4K" },
-          { zone: "4J", color: "#22c55e", label: "4J" },
-          { zone: "4L", color: "#a855f7", label: "4L" },
-          { zone: "4M", color: "#facc15", label: "4M" },
-          { zone: "4N", color: "#b45309", label: "4N" },
-          { zone: "4P", color: "#e2b17a", label: "4P" },
-          { zone: "4G", color: "#64748b", label: "4G Offices" },
-        ].map((z) => (
-          <div key={z.zone} className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/5">
-            <div className="w-2.5 h-2.5 rounded-full shadow-sm" style={{ background: z.color }} />
-            <span className="text-xs text-slate-200 font-semibold">{z.label}</span>
-          </div>
-        ))}
-      </div>
     </div>
   );
 }

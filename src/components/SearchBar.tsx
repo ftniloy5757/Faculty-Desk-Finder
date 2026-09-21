@@ -94,59 +94,60 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
   }
 
   return (
-    <div className="relative w-full max-w-xl mx-auto z-50">
-      {/* Search input */}
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-purple-500/20 rounded-2xl blur-lg opacity-60" />
-        <div className="relative flex items-center bg-slate-900/95 backdrop-blur-2xl border border-white/15 focus-within:border-cyan-400/50 focus-within:ring-2 focus-within:ring-cyan-400/20 rounded-2xl shadow-2xl transition-all overflow-hidden">
-          <svg
-            className="w-5 h-5 text-cyan-400 ml-4 flex-shrink-0"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-            />
-          </svg>
-          <input
-            ref={inputRef}
-            type="text"
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setIsOpen(true);
-            }}
-            onFocus={() => setIsOpen(true)}
-            onKeyDown={handleKeyDown}
-            placeholder="Search faculty by initial (e.g. SKZ, AAR), name, or desk ID..."
-            className="w-full px-4 py-3.5 bg-transparent text-white placeholder-slate-400 outline-none text-sm font-medium"
-            id="search-faculty"
+    <div className="relative w-full z-50">
+      {/* Search input container */}
+      <div className="relative flex items-center bg-[#0a1226]/95 backdrop-blur-xl border border-slate-700/80 focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/20 rounded-xl shadow-lg transition-all overflow-hidden">
+        <svg
+          className="w-4.5 h-4.5 text-slate-400 ml-3.5 flex-shrink-0"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2.2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
           />
-          {query && (
-            <button
-              onClick={() => {
-                setQuery("");
-                setIsOpen(false);
-              }}
-              className="mr-3 p-1 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors cursor-pointer"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
-            </button>
-          )}
-        </div>
+        </svg>
+        <input
+          ref={inputRef}
+          type="text"
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setIsOpen(true);
+          }}
+          onFocus={() => setIsOpen(true)}
+          onKeyDown={handleKeyDown}
+          placeholder="Search faculty by initial, name, or desk..."
+          className="w-full px-3.5 py-2.5 bg-transparent text-white placeholder-slate-400 outline-none text-xs sm:text-sm font-medium"
+          id="search-faculty"
+        />
+        {query ? (
+          <button
+            onClick={() => {
+              setQuery("");
+              setIsOpen(false);
+            }}
+            className="mr-3 p-1 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors cursor-pointer"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        ) : (
+          <span className="hidden xl:inline-block mr-3 px-1.5 py-0.5 text-[10px] font-mono font-semibold text-slate-400 bg-slate-800/80 border border-slate-700/60 rounded">
+            ESC
+          </span>
+        )}
       </div>
 
       {/* Results dropdown */}
       {isOpen && results.length > 0 && (
         <div
           ref={dropdownRef}
-          className="absolute top-full mt-2 w-full bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl overflow-hidden"
+          className="absolute top-full mt-1.5 w-full bg-[#080f24]/98 backdrop-blur-2xl border border-slate-700/90 rounded-xl shadow-2xl overflow-hidden divide-y divide-slate-800/60"
         >
           {results.map((result, index) => {
             const item = result.item;
@@ -158,12 +159,12 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
                 onClick={() => handleSelect(item)}
                 className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors cursor-pointer ${
                   isSelected
-                    ? "bg-cyan-500/15 border-l-4 border-cyan-400 text-white"
-                    : "hover:bg-white/[0.06] text-slate-300"
+                    ? "bg-blue-900/35 border-l-4 border-blue-500 text-white"
+                    : "hover:bg-slate-800/40 text-slate-200"
                 }`}
               >
                 <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-sm"
+                  className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-sm"
                   style={{
                     background:
                       item.zone === "4K"
@@ -189,7 +190,7 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
                     <p className="text-sm font-bold text-white truncate">
                       {item.name}
                     </p>
-                    <span className="text-[11px] font-mono font-bold text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-1.5 py-0.2 rounded">
+                    <span className="text-[11px] font-mono font-bold text-blue-300 bg-blue-950/80 border border-blue-800/60 px-1.5 py-0.2 rounded">
                       {item.initial}
                     </span>
                   </div>
@@ -198,28 +199,16 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
                   </p>
                 </div>
                 <svg
-                  className="w-4 h-4 text-slate-600 flex-shrink-0"
+                  className="w-4 h-4 text-slate-500 flex-shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             );
           })}
-        </div>
-      )}
-
-      {/* No results */}
-      {isOpen && query.trim() && results.length === 0 && (
-        <div className="absolute top-full mt-2 w-full bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl p-4 text-center text-slate-500 text-sm">
-          No faculty found matching &ldquo;{query}&rdquo;
         </div>
       )}
     </div>
