@@ -46,9 +46,11 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
     return fuse.search(query).slice(0, 8);
   }, [query, fuse]);
 
-  useEffect(() => {
+  const [prevQuery, setPrevQuery] = useState("");
+  if (query !== prevQuery) {
+    setPrevQuery(query);
     setSelectedIndex(-1);
-  }, [query]);
+  }
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
