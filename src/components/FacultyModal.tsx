@@ -98,6 +98,7 @@ export default function FacultyModal({
                 <div className="flex-shrink-0">
                   {hasPhoto ? (
                     <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden border-2 border-indigo-500/30 shadow-md bg-slate-900 flex items-center justify-center">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={faculty.imageUrl}
                         alt={displayName}

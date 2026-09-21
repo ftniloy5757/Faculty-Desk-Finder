@@ -3,6 +3,7 @@
 import { signIn } from "next-auth/react";
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 function SignInContent() {
   const searchParams = useSearchParams();
@@ -18,7 +19,7 @@ function SignInContent() {
           {/* Logo area */}
           <div className="text-center mb-10 flex flex-col items-center">
             <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-white mb-6 shadow-lg overflow-hidden border border-white/10">
-              <img src="/logo.png" alt="BRACU CSE Logo" className="w-full h-full object-contain p-2" />
+              <Image src="/logo.png" alt="BRACU CSE Logo" width={96} height={96} className="w-full h-full object-contain p-2" priority />
             </div>
             <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">
               Faculty Desk Finder
