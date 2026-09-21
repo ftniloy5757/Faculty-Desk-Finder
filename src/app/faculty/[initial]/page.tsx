@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import facultyData from "@/data/faculty.json";
+import facultyData from "@/data/facultyData.json";
 
 export default async function FacultyPage({
   params,
