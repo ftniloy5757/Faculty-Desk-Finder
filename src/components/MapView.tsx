@@ -10,6 +10,7 @@ import facultyData from "@/data/facultyData.json";
 import waypointsData from "@/data/waypoints.json";
 import { calculateOrthogonalPath } from "@/lib/pathfinding";
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 interface MapViewProps {
   autoSelectDeskId?: string;
@@ -156,7 +157,7 @@ export default function MapView({
       <header className="relative z-30 flex items-center justify-between px-6 sm:px-8 py-3.5 flex-shrink-0 border-b border-white/5">
         <div className="flex items-center gap-3.5">
           <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
-            <img src="/logo.png" alt="BRACU CSE Logo" className="w-full h-full object-contain p-1" />
+            <Image src="/logo.png" alt="BRACU CSE Logo" width={40} height={40} className="w-full h-full object-contain p-1" priority />
           </div>
           <div>
             <div className="flex items-center gap-2">
@@ -177,7 +178,21 @@ export default function MapView({
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          {/* 3D / 2D Architecture Switcher */}
+          <button
+            onClick={() => setIs3D((prev) => !prev)}
+            className={`px-3.5 py-2 text-xs font-semibold rounded-xl border transition-all shadow-md cursor-pointer flex items-center gap-1.5 ${
+              is3D
+                ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/40 hover:bg-cyan-500/30 shadow-cyan-500/10"
+                : "bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 hover:text-white"
+            }`}
+            title={is3D ? "Switch to 2D Top-Down Blueprint" : "Switch to 3D Architectural View"}
+          >
+            <span className={`inline-block w-2 h-2 rounded-full ${is3D ? "bg-cyan-400 animate-pulse" : "bg-slate-400"}`} />
+            <span>{is3D ? "3D View Active" : "3D View"}</span>
+          </button>
+
           {selectedDeskId && (
             <button
               onClick={handleReset}
