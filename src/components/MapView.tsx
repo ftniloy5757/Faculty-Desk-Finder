@@ -27,7 +27,6 @@ export default function MapView({
     (typeof facultyData)[0] | null
   >(null);
   const [showModal, setShowModal] = useState(false);
-  const [is3D, setIs3D] = useState(false);
   const [loggedCoords, setLoggedCoords] = useState<{ x: number; y: number } | null>(null);
 
   const [pathD, setPathD] = useState<string>("");
@@ -102,11 +101,6 @@ export default function MapView({
       setTimeout(() => {
         setShouldAnimatePath(true);
       }, 60);
-
-      // Halfway through path drawing (~1.2s), seamlessly tilt camera into 3D Isometric View
-      setTimeout(() => {
-        setIs3D(true);
-      }, 1200);
     },
     []
   );
@@ -121,9 +115,8 @@ export default function MapView({
     }
   }, [autoSelectDeskId, autoSelectInitial, selectDesk]);
 
-  // Reset viewport zoom/pan, return to flat 2D, and clear faculty state
+  // Reset viewport zoom/pan and clear faculty state
   const handleReset = useCallback(() => {
-    setIs3D(false);
     setSelectedDeskId(null);
     setSelectedFaculty(null);
     setShowModal(false);
@@ -154,9 +147,9 @@ export default function MapView({
   return (
     <div className="h-screen w-screen overflow-hidden relative bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 flex flex-col">
       {/* Header */}
-      <header className="relative z-30 flex items-center justify-between px-6 sm:px-8 py-3.5 flex-shrink-0 border-b border-white/5">
+      <header className="relative z-30 flex items-center justify-between px-6 sm:px-8 py-3.5 flex-shrink-0 border-b border-white/5 bg-slate-950/40 backdrop-blur-xl">
         <div className="flex items-center gap-3.5">
-          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10">
+          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden border border-white/10 flex-shrink-0">
             <Image src="/logo.png" alt="BRACU CSE Logo" width={40} height={40} className="w-full h-full object-contain p-1" priority />
           </div>
           <div>
@@ -168,20 +161,6 @@ export default function MapView({
         </div>
 
         <div className="flex items-center gap-2.5 sm:gap-3">
-          {/* 3D / 2D Architecture Switcher */}
-          <button
-            onClick={() => setIs3D((prev) => !prev)}
-            className={`px-3.5 py-2 text-xs font-semibold rounded-xl border transition-all shadow-md cursor-pointer flex items-center gap-1.5 ${
-              is3D
-                ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/40 hover:bg-cyan-500/30 shadow-cyan-500/10"
-                : "bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 hover:text-white"
-            }`}
-            title={is3D ? "Switch to 2D Top-Down Blueprint" : "Switch to 3D Architectural View"}
-          >
-            <span className={`inline-block w-2 h-2 rounded-full ${is3D ? "bg-cyan-400 animate-pulse" : "bg-slate-400"}`} />
-            <span>{is3D ? "3D Active" : "3D View"}</span>
-          </button>
-
           {selectedDeskId && (
             <button
               onClick={handleReset}
@@ -222,58 +201,37 @@ export default function MapView({
       {/* Main Map Canvas Area */}
       <div className="relative flex-1 min-h-0 px-4 sm:px-6 pb-4 sm:pb-6 overflow-hidden flex items-center justify-center">
         <div className="w-full h-full border border-white/10 rounded-3xl overflow-hidden bg-slate-950/60 backdrop-blur-md relative shadow-2xl">
-          {/* 3D Perspective Wrapper */}
-          <div
-            className="w-full h-full"
-            style={{
-              perspective: "1400px",
-              perspectiveOrigin: "50% 50%",
-            }}
+          <TransformWrapper
+            ref={transformRef}
+            initialScale={1}
+            minScale={0.8}
+            maxScale={8}
+            centerOnInit={true}
+            limitToBounds={false}
+            doubleClick={{ disabled: false }}
+            panning={{ velocityDisabled: false }}
           >
-            {/* Dynamic Isometric Tilt Container */}
-            <div
-              className="w-full h-full transition-transform duration-1000 ease-out"
-              style={{
-                transformStyle: "preserve-3d",
-                transform: is3D
-                  ? "rotateX(26deg) rotateZ(-7deg)"
-                  : "rotateX(0deg) rotateZ(0deg)",
+            <TransformComponent
+              wrapperStyle={{ width: "100%", height: "100%" }}
+              contentStyle={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              <TransformWrapper
-                ref={transformRef}
-                initialScale={1}
-                minScale={0.8}
-                maxScale={8}
-                centerOnInit={true}
-                limitToBounds={false}
-                doubleClick={{ disabled: false }}
-                panning={{ velocityDisabled: false }}
-              >
-                <TransformComponent
-                  wrapperStyle={{ width: "100%", height: "100%" }}
-                  contentStyle={{
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <SeatMap
-                    desks={facultyData}
-                    selectedDeskId={selectedDeskId}
-                    is3D={is3D}
-                    onDeskClick={handleDeskClick}
-                    onMapClick={handleMapClick}
-                    pathD={pathD}
-                    shouldAnimatePath={shouldAnimatePath}
-                    onPathAnimationComplete={handlePathAnimationComplete}
-                  />
-                </TransformComponent>
-              </TransformWrapper>
-            </div>
-          </div>
+              <SeatMap
+                desks={facultyData}
+                selectedDeskId={selectedDeskId}
+                onDeskClick={handleDeskClick}
+                onMapClick={handleMapClick}
+                pathD={pathD}
+                shouldAnimatePath={shouldAnimatePath}
+                onPathAnimationComplete={handlePathAnimationComplete}
+              />
+            </TransformComponent>
+          </TransformWrapper>
         </div>
       </div>
 
@@ -293,7 +251,7 @@ export default function MapView({
           </div>
           <button
             onClick={() => setLoggedCoords(null)}
-            className="p-1 rounded hover:bg-white/10 text-slate-400 hover:text-white"
+            className="p-1 rounded hover:bg-white/10 text-slate-400 hover:text-white cursor-pointer"
           >
             ✕
           </button>
