@@ -155,7 +155,18 @@ export default function SeatMap({
         `}</style>
       </defs>
 
-      {/* Layer 1: Background Blueprint Image */}
+      {/* Layer 1: Background Blueprint Architectural Mat */}
+      <clipPath id="blueprint-mat-clip">
+        <rect x="0" y="0" width="4095" height="2487" rx="24" />
+      </clipPath>
+      <rect
+        x="0"
+        y="0"
+        width="4095"
+        height="2487"
+        rx="24"
+        fill="#ffffff"
+      />
       <image
         href="/map.png"
         x="0"
@@ -163,6 +174,19 @@ export default function SeatMap({
         width="4095"
         height="2487"
         preserveAspectRatio="xMidYMid meet"
+        clipPath="url(#blueprint-mat-clip)"
+      />
+      <rect
+        x="0"
+        y="0"
+        width="4095"
+        height="2487"
+        rx="24"
+        fill="none"
+        stroke="#94a3b8"
+        strokeWidth="6"
+        opacity="0.5"
+        className="pointer-events-none"
       />
 
       {/* Layer 2: Architectural Glass Room Partitions (3D Mode) */}

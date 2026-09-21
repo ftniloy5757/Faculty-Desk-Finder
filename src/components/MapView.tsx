@@ -160,21 +160,10 @@ export default function MapView({
             <Image src="/logo.png" alt="BRACU CSE Logo" width={40} height={40} className="w-full h-full object-contain p-1" priority />
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <h1 className="text-white font-bold text-base sm:text-lg tracking-tight leading-tight">
-                Faculty Desk Finder
-              </h1>
-              <span
-                className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full transition-all duration-700 ${
-                  is3D
-                    ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm"
-                    : "bg-white/10 text-slate-400 border border-white/10"
-                }`}
-              >
-                {is3D ? "3D Isometric" : "2D Map"}
-              </span>
-            </div>
-            <p className="text-slate-400 text-xs mt-0.5">BRACU CSE Department</p>
+            <h1 className="text-white font-bold text-base sm:text-lg tracking-tight leading-tight">
+              Faculty Desk Finder
+            </h1>
+            <p className="text-slate-400 text-xs mt-0.5 font-medium">Department of Computer Science & Engineering</p>
           </div>
         </div>
 
@@ -190,27 +179,33 @@ export default function MapView({
             title={is3D ? "Switch to 2D Top-Down Blueprint" : "Switch to 3D Architectural View"}
           >
             <span className={`inline-block w-2 h-2 rounded-full ${is3D ? "bg-cyan-400 animate-pulse" : "bg-slate-400"}`} />
-            <span>{is3D ? "3D View Active" : "3D View"}</span>
+            <span>{is3D ? "3D Active" : "3D View"}</span>
           </button>
 
           {selectedDeskId && (
             <button
               onClick={handleReset}
-              className="px-4 py-2 text-xs font-semibold text-white bg-indigo-600/80 hover:bg-indigo-600 border border-indigo-400/30 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+              className="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 border border-indigo-400/30 rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1.5"
             >
               <span>←</span>
-              <span>Full Map (2D)</span>
+              <span>Full Map</span>
             </button>
           )}
 
           {session?.user && (
-            <div className="flex items-center gap-2.5">
-              <span className="text-slate-400 text-xs hidden sm:block">
-                {session.user.email}
-              </span>
+            <div className="flex items-center gap-2 pl-2 border-l border-white/10">
+              <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">
+                <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-[10px] font-bold text-white shadow-sm flex-shrink-0">
+                  {session.user.email ? session.user.email[0].toUpperCase() : "U"}
+                </div>
+                <span className="text-slate-300 text-xs font-mono font-medium max-w-[170px] lg:max-w-[240px] truncate">
+                  {session.user.email}
+                </span>
+              </div>
               <button
                 onClick={() => signOut()}
-                className="px-3.5 py-2 text-xs font-medium text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-xl transition-all cursor-pointer"
+                className="px-3 py-1.5 text-xs font-semibold text-slate-400 hover:text-red-300 bg-white/[0.04] hover:bg-red-500/10 border border-white/10 hover:border-red-500/30 rounded-xl transition-all cursor-pointer shadow-sm"
+                title="Sign out of your session"
               >
                 Sign out
               </button>
@@ -306,19 +301,20 @@ export default function MapView({
       )}
 
       {/* Zone Legend */}
-      <div className="fixed bottom-5 left-5 z-20 hidden md:flex flex-wrap gap-1.5 p-2.5 bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-xl">
+      <div className="fixed bottom-6 left-6 z-20 hidden md:flex items-center gap-1.5 px-3 py-2 bg-slate-900/90 backdrop-blur-xl border border-white/15 rounded-2xl shadow-2xl">
+        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">Zones:</span>
         {[
-          { zone: "4K", color: "#dc2626", label: "4K" },
-          { zone: "4J", color: "#16a34a", label: "4J" },
-          { zone: "4L", color: "#9333ea", label: "4L" },
-          { zone: "4M", color: "#eab308", label: "4M" },
-          { zone: "4N", color: "#92400e", label: "4N" },
-          { zone: "4P", color: "#d4a574", label: "4P" },
-          { zone: "4G", color: "#6b7280", label: "4G" },
+          { zone: "4K", color: "#ef4444", label: "4K" },
+          { zone: "4J", color: "#22c55e", label: "4J" },
+          { zone: "4L", color: "#a855f7", label: "4L" },
+          { zone: "4M", color: "#facc15", label: "4M" },
+          { zone: "4N", color: "#b45309", label: "4N" },
+          { zone: "4P", color: "#e2b17a", label: "4P" },
+          { zone: "4G", color: "#64748b", label: "4G Offices" },
         ].map((z) => (
-          <div key={z.zone} className="flex items-center gap-1 px-1.5 py-0.5 rounded">
-            <div className="w-2.5 h-2.5 rounded-sm" style={{ background: z.color }} />
-            <span className="text-[10px] text-slate-400 font-medium">{z.label}</span>
+          <div key={z.zone} className="flex items-center gap-1.5 px-2 py-1 rounded-lg bg-white/[0.04] border border-white/5">
+            <div className="w-2.5 h-2.5 rounded-full shadow-sm" style={{ background: z.color }} />
+            <span className="text-xs text-slate-200 font-semibold">{z.label}</span>
           </div>
         ))}
       </div>

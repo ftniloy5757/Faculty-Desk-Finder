@@ -45,6 +45,13 @@ function SignInContent() {
                 Sign in with Google
               </span>
             </button>
+
+            <div className="mt-6 flex items-center justify-center gap-2 text-xs text-slate-400 bg-white/5 py-2.5 px-4 rounded-xl border border-white/5">
+              <svg className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <span>Restricted to emails ending with <strong className="text-slate-200">bracu.ac.bd</strong></span>
+            </div>
           </div>
         </div>
       </div>

@@ -38,6 +38,14 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(signInUrl);
   }
 
+  // Ensure authenticated user strictly has an email ending with bracu.ac.bd
+  const email = (token.email as string)?.toLowerCase().trim();
+  const isAuthorized = email && (email.endsWith("@bracu.ac.bd") || email.endsWith(".bracu.ac.bd"));
+  if (!isAuthorized) {
+    const errorUrl = new URL("/auth/error?error=AccessDenied", request.url);
+    return NextResponse.redirect(errorUrl);
+  }
+
   return NextResponse.next();
 }
 

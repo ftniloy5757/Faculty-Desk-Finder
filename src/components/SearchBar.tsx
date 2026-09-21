@@ -94,17 +94,17 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
   }
 
   return (
-    <div className="relative w-full max-w-lg mx-auto z-50">
+    <div className="relative w-full max-w-xl mx-auto z-50">
       {/* Search input */}
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-purple-500/20 rounded-2xl blur-md" />
-        <div className="relative flex items-center bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-indigo-500/20 to-purple-500/20 rounded-2xl blur-lg opacity-60" />
+        <div className="relative flex items-center bg-slate-900/95 backdrop-blur-2xl border border-white/15 focus-within:border-cyan-400/50 focus-within:ring-2 focus-within:ring-cyan-400/20 rounded-2xl shadow-2xl transition-all overflow-hidden">
           <svg
-            className="w-5 h-5 text-slate-400 ml-4 flex-shrink-0"
+            className="w-5 h-5 text-cyan-400 ml-4 flex-shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth={2}
+            strokeWidth={2.2}
           >
             <path
               strokeLinecap="round"
@@ -122,8 +122,8 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
             }}
             onFocus={() => setIsOpen(true)}
             onKeyDown={handleKeyDown}
-            placeholder="Search faculty by initial, name, or desk ID..."
-            className="w-full px-4 py-3.5 bg-transparent text-white placeholder-slate-500 outline-none text-sm font-medium"
+            placeholder="Search faculty by initial (e.g. SKZ, AAR), name, or desk ID..."
+            className="w-full px-4 py-3.5 bg-transparent text-white placeholder-slate-400 outline-none text-sm font-medium"
             id="search-faculty"
           />
           {query && (
@@ -132,7 +132,7 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
                 setQuery("");
                 setIsOpen(false);
               }}
-              className="mr-3 p-1 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors"
+              className="mr-3 p-1 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors cursor-pointer"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -156,40 +156,45 @@ export default function SearchBar({ faculty, onSelectFaculty }: SearchBarProps) 
               <button
                 key={`${item.deskId}-${item.initial}-${index}`}
                 onClick={() => handleSelect(item)}
-                className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors ${
+                className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors cursor-pointer ${
                   isSelected
-                    ? "bg-indigo-600/30 text-white"
-                    : "hover:bg-white/5 text-slate-300"
+                    ? "bg-cyan-500/15 border-l-4 border-cyan-400 text-white"
+                    : "hover:bg-white/[0.06] text-slate-300"
                 }`}
               >
                 <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0"
+                  className="w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-sm"
                   style={{
                     background:
                       item.zone === "4K"
-                        ? "#dc2626"
+                        ? "#ef4444"
                         : item.zone === "4J"
-                          ? "#16a34a"
+                          ? "#22c55e"
                           : item.zone === "4L"
-                            ? "#9333ea"
+                            ? "#a855f7"
                             : item.zone === "4M"
-                              ? "#eab308"
+                              ? "#facc15"
                               : item.zone === "4N"
-                                ? "#92400e"
+                                ? "#b45309"
                                 : item.zone === "4P"
-                                  ? "#d4a574"
-                                  : "#6b7280",
+                                  ? "#e2b17a"
+                                  : "#64748b",
                     color: item.zone === "4M" || item.zone === "4P" ? "#1a1a1a" : "#fff",
                   }}
                 >
                   {item.zone}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold truncate">
-                    {item.name} ({item.initial})
-                  </p>
-                  <p className="text-xs text-slate-500 truncate">
-                    Desk {item.deskId} &bull; {item.position || "Faculty"}
+                  <div className="flex items-center gap-2">
+                    <p className="text-sm font-bold text-white truncate">
+                      {item.name}
+                    </p>
+                    <span className="text-[11px] font-mono font-bold text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-1.5 py-0.2 rounded">
+                      {item.initial}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-400 truncate mt-0.5 font-medium">
+                    Desk <span className="text-slate-200 font-semibold">{item.deskId}</span> &bull; {item.position || "Faculty"}
                   </p>
                 </div>
                 <svg

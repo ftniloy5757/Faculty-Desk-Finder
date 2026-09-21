@@ -10,7 +10,7 @@ function ErrorContent() {
 
   const errorMessages: Record<string, string> = {
     AccessDenied:
-      "Your email domain is not authorized. Only @g.bracu.ac.bd (students) and @bracu.ac.bd (faculty) emails are allowed.",
+      "Access denied. Only official BRAC University emails ending with bracu.ac.bd are allowed to access this portal.",
     Configuration: "There is a server configuration issue. Please contact support.",
     Default: "An unexpected authentication error occurred.",
   };
