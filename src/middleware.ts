@@ -5,15 +5,26 @@ import { getToken } from "next-auth/jwt";
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Allow auth routes and API routes
+  // Allow auth routes, API routes, and static assets in the public folder
   if (
     pathname.startsWith("/api/auth") ||
     pathname.startsWith("/auth") ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/favicon") ||
     pathname === "/favicon.ico" ||
-    pathname === "/coordinate_helper.html"
+    pathname === "/coordinate_helper.html" ||
+    pathname.startsWith("/dev/mapper") ||
+    pathname.endsWith(".png") ||
+    pathname.endsWith(".jpg") ||
+    pathname.endsWith(".jpeg") ||
+    pathname.endsWith(".svg") ||
+    pathname.endsWith(".ico")
   ) {
+    return NextResponse.next();
+  }
+
+  // Allow development testing without Google OAuth block if BYPASS_AUTH=true
+  if (process.env.NODE_ENV === "development" && process.env.BYPASS_AUTH === "true") {
     return NextResponse.next();
   }
 

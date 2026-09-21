@@ -1,0 +1,97 @@
+[
+  { "id": "ENTRANCE", "x": 50.0, "y": 97.7, "neighbors": ["FOYER"] },
+  { "id": "FOYER", "x": 50.0, "y": 93.3, "neighbors": ["ENTRANCE", "SOUTH_WEST", "SPINE_SOUTH", "SOUTH_EAST"] },
+  { "id": "SOUTH_WEST", "x": 38.6, "y": 93.3, "neighbors": ["FOYER"] },
+  { "id": "SOUTH_EAST", "x": 62.0, "y": 93.3, "neighbors": ["FOYER", "SOUTH_FAR_EAST"] },
+  { "id": "SOUTH_FAR_EAST", "x": 85.5, "y": 93.3, "neighbors": ["SOUTH_EAST", "CORR_4G_FAR_SOUTH"] },
+
+  { "id": "SPINE_SOUTH", "x": 53.7, "y": 93.3, "neighbors": ["FOYER", "SPINE_MID"] },
+  { "id": "SPINE_MID", "x": 53.7, "y": 74.4, "neighbors": ["SPINE_SOUTH", "SPINE_NORTH"] },
+  { "id": "SPINE_NORTH", "x": 53.7, "y": 60.3, "neighbors": ["SPINE_MID", "MID_CROSS_CENTER", "MID_CROSS_EAST"] },
+
+  { "id": "MID_CROSS_CENTER", "x": 53.7, "y": 60.3, "neighbors": ["SPINE_NORTH", "MID_CROSS_WEST", "MID_CROSS_EAST"] },
+  { "id": "MID_CROSS_WEST", "x": 27.2, "y": 60.3, "neighbors": ["MID_CROSS_CENTER", "MID_CROSS_FAR_WEST", "CONN_MID_WEST"] },
+  { "id": "MID_CROSS_FAR_WEST", "x": 14.4, "y": 60.3, "neighbors": ["MID_CROSS_WEST", "CONN_WEST", "AISLE_4J_EAST_MID"] },
+  { "id": "MID_CROSS_EAST", "x": 62.0, "y": 60.3, "neighbors": ["MID_CROSS_CENTER", "SPINE_NORTH", "MID_CROSS_FAR_EAST", "CONN_EAST"] },
+  { "id": "MID_CROSS_FAR_EAST", "x": 85.5, "y": 60.3, "neighbors": ["MID_CROSS_EAST", "CONN_FAR_EAST", "CORR_4G_FAR_SOUTH"] },
+
+  { "id": "CONN_WEST", "x": 14.4, "y": 49.0, "neighbors": ["MID_CROSS_FAR_WEST", "HW_4K_4L", "AISLE_4J_EAST_TOP"] },
+  { "id": "CONN_MID_WEST", "x": 27.2, "y": 49.0, "neighbors": ["MID_CROSS_WEST", "HW_4L_4M"] },
+  { "id": "CONN_EAST", "x": 62.0, "y": 49.0, "neighbors": ["MID_CROSS_EAST", "HW_4P_WEST", "AISLE_4P_WEST"] },
+  { "id": "CONN_FAR_EAST", "x": 85.5, "y": 49.0, "neighbors": ["MID_CROSS_FAR_EAST", "HW_4G_EAST", "CORR_4G_MID"] },
+
+  { "id": "HW_4K_FAR_WEST", "x": 3.5, "y": 38.6, "neighbors": ["HW_4K_WEST"] },
+  { "id": "HW_4K_WEST", "x": 6.1, "y": 38.6, "neighbors": ["HW_4K_FAR_WEST", "HW_4K_4L", "AISLE_4K_BOTTOM", "AISLE_4J_WEST_TOP"] },
+  { "id": "HW_4K_4L", "x": 14.4, "y": 38.6, "neighbors": ["HW_4K_WEST", "HW_4L", "CONN_WEST", "AISLE_4K_4L_BOTTOM"] },
+  { "id": "HW_4L", "x": 21.2, "y": 38.6, "neighbors": ["HW_4K_4L", "HW_4L_4M", "AISLE_4L_BOTTOM"] },
+  { "id": "HW_4L_4M", "x": 29.1, "y": 38.6, "neighbors": ["HW_4L", "HW_4M_LEFT", "CONN_MID_WEST", "AISLE_4M_WEST_BOTTOM"] },
+  { "id": "HW_4M_LEFT", "x": 35.0, "y": 38.6, "neighbors": ["HW_4L_4M", "HW_4M_MID"] },
+  { "id": "HW_4M_MID", "x": 39.1, "y": 38.6, "neighbors": ["HW_4M_LEFT", "HW_4M_4N", "AISLE_4M_CENTER_BOTTOM"] },
+  { "id": "HW_4M_4N", "x": 48.5, "y": 38.6, "neighbors": ["HW_4M_MID", "HW_4N_LEFT", "AISLE_4M_EAST_BOTTOM", "AISLE_4N_WEST_BOTTOM"] },
+  { "id": "HW_4N_LEFT", "x": 53.1, "y": 38.6, "neighbors": ["HW_4M_4N", "HW_4N_MID"] },
+  { "id": "HW_4N_MID", "x": 57.6, "y": 38.6, "neighbors": ["HW_4N_LEFT", "HW_4N_4G", "AISLE_4N_CENTER_BOTTOM"] },
+  { "id": "HW_4N_4G", "x": 66.5, "y": 38.6, "neighbors": ["HW_4N_MID", "HW_4P_WEST", "AISLE_4N_EAST_BOTTOM"] },
+  { "id": "HW_4P_WEST", "x": 62.0, "y": 38.6, "neighbors": ["HW_4N_4G", "HW_4G_TOP", "CONN_EAST"] },
+  { "id": "HW_4G_TOP", "x": 73.5, "y": 38.6, "neighbors": ["HW_4P_WEST", "HW_4G_EAST", "AISLE_4G_TOP_BOTTOM"] },
+  { "id": "HW_4G_EAST", "x": 83.0, "y": 38.6, "neighbors": ["HW_4G_TOP", "HW_FAR_EAST", "CONN_FAR_EAST"] },
+  { "id": "HW_FAR_EAST", "x": 89.1, "y": 38.6, "neighbors": ["HW_4G_EAST", "CORR_4G_EAST_TOP"] },
+
+  { "id": "AISLE_4M_WEST_BOTTOM", "x": 29.1, "y": 38.6, "neighbors": ["HW_4L_4M", "AISLE_4M_WEST_MID"] },
+  { "id": "AISLE_4M_WEST_MID", "x": 29.1, "y": 19.5, "neighbors": ["AISLE_4M_WEST_BOTTOM", "AISLE_4M_WEST_TOP"] },
+  { "id": "AISLE_4M_WEST_TOP", "x": 29.1, "y": 3.5, "neighbors": ["AISLE_4M_WEST_MID", "AISLE_4M_TOP_CROSS"] },
+
+  { "id": "AISLE_4M_CENTER_BOTTOM", "x": 39.1, "y": 38.6, "neighbors": ["HW_4M_MID", "AISLE_4M_CENTER_MID"] },
+  { "id": "AISLE_4M_CENTER_MID", "x": 39.1, "y": 19.5, "neighbors": ["AISLE_4M_CENTER_BOTTOM", "AISLE_4M_CENTER_TOP"] },
+  { "id": "AISLE_4M_CENTER_TOP", "x": 39.1, "y": 3.5, "neighbors": ["AISLE_4M_CENTER_MID", "AISLE_4M_TOP_CROSS"] },
+
+  { "id": "AISLE_4M_EAST_BOTTOM", "x": 48.5, "y": 38.6, "neighbors": ["HW_4M_4N", "AISLE_4M_EAST_MID"] },
+  { "id": "AISLE_4M_EAST_MID", "x": 48.5, "y": 19.5, "neighbors": ["AISLE_4M_EAST_BOTTOM", "AISLE_4M_EAST_TOP"] },
+  { "id": "AISLE_4M_EAST_TOP", "x": 48.5, "y": 3.5, "neighbors": ["AISLE_4M_EAST_MID", "AISLE_4M_TOP_CROSS"] },
+  { "id": "AISLE_4M_TOP_CROSS", "x": 39.1, "y": 1.9, "neighbors": ["AISLE_4M_WEST_TOP", "AISLE_4M_CENTER_TOP", "AISLE_4M_EAST_TOP"] },
+
+  { "id": "AISLE_4N_WEST_BOTTOM", "x": 48.5, "y": 38.6, "neighbors": ["HW_4M_4N", "AISLE_4N_WEST_MID"] },
+  { "id": "AISLE_4N_WEST_MID", "x": 48.5, "y": 19.5, "neighbors": ["AISLE_4N_WEST_BOTTOM", "AISLE_4N_WEST_TOP"] },
+  { "id": "AISLE_4N_WEST_TOP", "x": 48.5, "y": 3.5, "neighbors": ["AISLE_4N_WEST_MID", "AISLE_4N_TOP_CROSS"] },
+
+  { "id": "AISLE_4N_CENTER_BOTTOM", "x": 57.6, "y": 38.6, "neighbors": ["HW_4N_MID", "AISLE_4N_CENTER_MID"] },
+  { "id": "AISLE_4N_CENTER_MID", "x": 57.6, "y": 19.5, "neighbors": ["AISLE_4N_CENTER_BOTTOM", "AISLE_4N_CENTER_TOP"] },
+  { "id": "AISLE_4N_CENTER_TOP", "x": 57.6, "y": 3.5, "neighbors": ["AISLE_4N_CENTER_MID", "AISLE_4N_TOP_CROSS"] },
+
+  { "id": "AISLE_4N_EAST_BOTTOM", "x": 66.5, "y": 38.6, "neighbors": ["HW_4N_4G", "AISLE_4N_EAST_MID"] },
+  { "id": "AISLE_4N_EAST_MID", "x": 66.5, "y": 19.5, "neighbors": ["AISLE_4N_EAST_BOTTOM", "AISLE_4N_EAST_TOP"] },
+  { "id": "AISLE_4N_EAST_TOP", "x": 66.5, "y": 3.5, "neighbors": ["AISLE_4N_EAST_MID", "AISLE_4N_TOP_CROSS"] },
+  { "id": "AISLE_4N_TOP_CROSS", "x": 57.6, "y": 1.9, "neighbors": ["AISLE_4N_WEST_TOP", "AISLE_4N_CENTER_TOP", "AISLE_4N_EAST_TOP"] },
+
+  { "id": "AISLE_4K_BOTTOM", "x": 6.1, "y": 38.6, "neighbors": ["HW_4K_WEST", "AISLE_4K_MID"] },
+  { "id": "AISLE_4K_MID", "x": 6.1, "y": 28.0, "neighbors": ["AISLE_4K_BOTTOM", "AISLE_4K_TOP"] },
+  { "id": "AISLE_4K_TOP", "x": 6.1, "y": 20.5, "neighbors": ["AISLE_4K_MID"] },
+
+  { "id": "AISLE_4K_4L_BOTTOM", "x": 14.4, "y": 38.6, "neighbors": ["HW_4K_4L", "AISLE_4K_4L_MID"] },
+  { "id": "AISLE_4K_4L_MID", "x": 14.4, "y": 28.0, "neighbors": ["AISLE_4K_4L_BOTTOM", "AISLE_4K_4L_TOP"] },
+  { "id": "AISLE_4K_4L_TOP", "x": 14.4, "y": 20.5, "neighbors": ["AISLE_4K_4L_MID"] },
+
+  { "id": "AISLE_4L_BOTTOM", "x": 21.2, "y": 38.6, "neighbors": ["HW_4L", "AISLE_4L_MID"] },
+  { "id": "AISLE_4L_MID", "x": 21.2, "y": 28.0, "neighbors": ["AISLE_4L_BOTTOM", "AISLE_4L_TOP"] },
+  { "id": "AISLE_4L_TOP", "x": 21.2, "y": 20.5, "neighbors": ["AISLE_4L_MID"] },
+
+  { "id": "AISLE_4J_WEST_TOP", "x": 6.1, "y": 38.6, "neighbors": ["HW_4K_WEST", "AISLE_4J_WEST_MID"] },
+  { "id": "AISLE_4J_WEST_MID", "x": 6.1, "y": 50.0, "neighbors": ["AISLE_4J_WEST_TOP", "AISLE_4J_WEST_BOTTOM"] },
+  { "id": "AISLE_4J_WEST_BOTTOM", "x": 6.1, "y": 64.3, "neighbors": ["AISLE_4J_WEST_MID"] },
+
+  { "id": "AISLE_4J_EAST_TOP", "x": 14.4, "y": 38.6, "neighbors": ["CONN_WEST", "AISLE_4J_EAST_MID"] },
+  { "id": "AISLE_4J_EAST_MID", "x": 14.4, "y": 50.0, "neighbors": ["AISLE_4J_EAST_TOP", "MID_CROSS_FAR_WEST", "AISLE_4J_EAST_BOTTOM"] },
+  { "id": "AISLE_4J_EAST_BOTTOM", "x": 14.4, "y": 64.3, "neighbors": ["AISLE_4J_EAST_MID"] },
+
+  { "id": "AISLE_4P_WEST", "x": 62.0, "y": 49.0, "neighbors": ["CONN_EAST", "AISLE_4P_MID_WEST"] },
+  { "id": "AISLE_4P_MID_WEST", "x": 68.0, "y": 49.0, "neighbors": ["AISLE_4P_WEST", "AISLE_4P_CENTER"] },
+  { "id": "AISLE_4P_CENTER", "x": 74.5, "y": 49.0, "neighbors": ["AISLE_4P_MID_WEST", "AISLE_4P_EAST"] },
+  { "id": "AISLE_4P_EAST", "x": 81.8, "y": 49.0, "neighbors": ["AISLE_4P_CENTER"] },
+
+  { "id": "AISLE_4G_TOP_BOTTOM", "x": 73.5, "y": 38.6, "neighbors": ["HW_4G_TOP", "AISLE_4G_TOP_MID"] },
+  { "id": "AISLE_4G_TOP_MID", "x": 73.5, "y": 20.0, "neighbors": ["AISLE_4G_TOP_BOTTOM", "AISLE_4G_TOP_HIGH"] },
+  { "id": "AISLE_4G_TOP_HIGH", "x": 73.5, "y": 3.5, "neighbors": ["AISLE_4G_TOP_MID"] },
+
+  { "id": "CORR_4G_EAST_TOP", "x": 89.1, "y": 38.6, "neighbors": ["HW_FAR_EAST", "CORR_4G_MID"] },
+  { "id": "CORR_4G_MID", "x": 85.5, "y": 49.0, "neighbors": ["CORR_4G_EAST_TOP", "CONN_FAR_EAST", "CORR_4G_FAR_SOUTH"] },
+  { "id": "CORR_4G_FAR_SOUTH", "x": 85.5, "y": 93.3, "neighbors": ["CORR_4G_MID", "SOUTH_FAR_EAST", "MID_CROSS_FAR_EAST"] }
+]
